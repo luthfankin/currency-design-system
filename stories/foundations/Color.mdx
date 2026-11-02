@@ -1,0 +1,35 @@
+import { Meta } from '@storybook/blocks';
+import { ColorPrimitives, SemanticColors, ContrastTable, PlatformSwitch } from '../../storybook/foundations';
+
+<Meta title="Foundations/Color" />
+
+# Color
+
+Two tiers. **Semantic tokens** (`color/bg/*`, `color/text/*`, …) describe intent and are what you use in UI.
+They point to **primitives** (the raw palette), which you should never reference directly in a screen.
+
+**Brand red, fill vs. accent:** `bg/brand` uses red/600 `#CC000B` so white labels pass AA (5.88:1).
+The pure brand red/500 `#FF000E` is reserved for logo, icons and borders, because white text on it is only 3.99:1.
+
+## Semantic tokens
+
+Click any name to copy it.
+
+<PlatformSwitch />
+<SemanticColors group="bg" />
+<SemanticColors group="text" />
+<SemanticColors group="icon" />
+<SemanticColors group="border" />
+<SemanticColors group="accent" />
+
+## Contrast
+
+Every pairing the semantic set is designed for, checked against WCAG 2.1. Text needs 4.5:1; icons and focus rings need 3:1.
+
+**Warning fills** (`bg/warning`) always take dark text (`text/primary`), never white. **On `bg/muted`** use `text/secondary`.
+
+<ContrastTable />
+
+## Primitives
+
+<ColorPrimitives />

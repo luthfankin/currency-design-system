@@ -1,0 +1,398 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-base-white: #ffffff;
+  --color-base-black: #000000;
+  --color-red-50: #fff2f3;
+  --color-red-100: #ffe0e1;
+  --color-red-200: #ffccce;
+  --color-red-300: #ff999e;
+  --color-red-400: #ff4d57;
+  --color-red-500: #ff000e;
+  --color-red-600: #cc000b;
+  --color-red-700: #b2000a;
+  --color-red-800: #990008;
+  --color-red-900: #660006;
+  --color-red-950: #3d100d;
+  --color-blue-50: #f0f6ff;
+  --color-blue-100: #dcebff;
+  --color-blue-200: #b3d2fe;
+  --color-blue-300: #88b9fe;
+  --color-blue-400: #5b9eff;
+  --color-blue-500: #3885fc;
+  --color-blue-600: #0066ff;
+  --color-blue-700: #0052d6;
+  --color-blue-800: #003cb3;
+  --color-blue-900: #022b82;
+  --color-blue-950: #021b54;
+  --color-cyan-50: #ebf9f9;
+  --color-cyan-100: #ccfcfb;
+  --color-cyan-200: #a9fefd;
+  --color-cyan-300: #7dffff;
+  --color-cyan-400: #65dddd;
+  --color-cyan-500: #4dbcbd;
+  --color-cyan-600: #349d9d;
+  --color-cyan-700: #1a7e7e;
+  --color-cyan-800: #076060;
+  --color-cyan-900: #004343;
+  --color-cyan-950: #002828;
+  --color-turquoise-50: #edfbf8;
+  --color-turquoise-100: #ddf7f2;
+  --color-turquoise-200: #a8ebde;
+  --color-turquoise-300: #6adfc9;
+  --color-turquoise-400: #05c6a1;
+  --color-turquoise-500: #14a989;
+  --color-turquoise-600: #058d72;
+  --color-turquoise-700: #04725c;
+  --color-turquoise-800: #055847;
+  --color-turquoise-900: #014032;
+  --color-turquoise-950: #00291f;
+  --color-green-50: #eefaf4;
+  --color-green-100: #d9f9ea;
+  --color-green-200: #66ebaf;
+  --color-green-300: #00df82;
+  --color-green-400: #17c272;
+  --color-green-500: #09a660;
+  --color-green-600: #0a8b50;
+  --color-green-700: #057140;
+  --color-green-800: #045831;
+  --color-green-900: #004022;
+  --color-green-950: #012a14;
+  --color-orange-50: #fffaf0;
+  --color-orange-100: #fff3d9;
+  --color-orange-200: #ffd27a;
+  --color-orange-300: #ffab2c;
+  --color-orange-400: #e09417;
+  --color-orange-500: #c17d0c;
+  --color-orange-600: #a1690b;
+  --color-orange-700: #845405;
+  --color-orange-800: #664104;
+  --color-orange-900: #4b2e00;
+  --color-orange-950: #311d01;
+  --color-lime-50: #fbfdf2;
+  --color-lime-100: #f8ffd9;
+  --color-lime-200: #efffa0;
+  --color-lime-300: #e7fe55;
+  --color-lime-400: #c7dc3d;
+  --color-lime-500: #a8ba22;
+  --color-lime-600: #8a9a0a;
+  --color-lime-700: #6d7a09;
+  --color-lime-800: #525c01;
+  --color-lime-900: #383f00;
+  --color-lime-950: #202500;
+  --color-neutral-50: #f6f6f7;
+  --color-neutral-100: #e9e9ea;
+  --color-neutral-200: #d5d5d6;
+  --color-neutral-300: #bcbcbd;
+  --color-neutral-400: #a0a0a1;
+  --color-neutral-500: #858586;
+  --color-neutral-600: #6d6d6e;
+  --color-neutral-700: #555556;
+  --color-neutral-800: #404041;
+  --color-neutral-900: #29292a;
+  --color-neutral-950: #1c1c1d;
+  --color-success-50: #f0fbf1;
+  --color-success-100: #dcf4e0;
+  --color-success-200: #bae8c1;
+  --color-success-300: #8ad698;
+  --color-success-400: #55be6f;
+  --color-success-500: #16a34a;
+  --color-success-600: #05873a;
+  --color-success-700: #026d2d;
+  --color-success-800: #015522;
+  --color-success-900: #004017;
+  --color-success-950: #002c0e;
+  --color-warning-50: #fef6ed;
+  --color-warning-100: #ffeddb;
+  --color-warning-200: #fedbb4;
+  --color-warning-300: #ffbf72;
+  --color-warning-400: #f59e0b;
+  --color-warning-500: #cb8207;
+  --color-warning-600: #a56901;
+  --color-warning-700: #825203;
+  --color-warning-800: #633d02;
+  --color-warning-900: #4a2d00;
+  --color-warning-950: #331d00;
+  --color-error-50: #fef5f4;
+  --color-error-100: #ffe6e3;
+  --color-error-200: #fecdc7;
+  --color-error-300: #feaca2;
+  --color-error-400: #ff7e71;
+  --color-error-500: #fc413b;
+  --color-error-600: #dc2626;
+  --color-error-700: #b41016;
+  --color-error-800: #8f010a;
+  --color-error-900: #6b0005;
+  --color-error-950: #490002;
+  --color-info-50: #f4f8ff;
+  --color-info-100: #e4edfe;
+  --color-info-200: #c9dbfe;
+  --color-info-300: #a3c2ff;
+  --color-info-400: #75a3ff;
+  --color-info-500: #4682fe;
+  --color-info-600: #2563eb;
+  --color-info-700: #184dc3;
+  --color-info-800: #0f3b9d;
+  --color-info-900: #082b79;
+  --color-info-950: #031c57;
+  --color-alpha-black-60: rgba(0, 0, 0, 0.6);
+  --color-alpha-black-8: rgba(0, 0, 0, 0.08);
+  --color-alpha-white-16: rgba(255, 255, 255, 0.16);
+  --dimension-0: 0px;
+  --dimension-1: 1px;
+  --dimension-2: 2px;
+  --dimension-4: 4px;
+  --dimension-6: 6px;
+  --dimension-8: 8px;
+  --dimension-12: 12px;
+  --dimension-16: 16px;
+  --dimension-20: 20px;
+  --dimension-24: 24px;
+  --dimension-32: 32px;
+  --dimension-40: 40px;
+  --dimension-48: 48px;
+  --dimension-56: 56px;
+  --dimension-64: 64px;
+  --dimension-80: 80px;
+  --dimension-full: 9999px;
+  --font-family-base: Inter, system-ui, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-line-height-14: 14px;
+  --font-line-height-16: 16px;
+  --font-line-height-20: 20px;
+  --font-line-height-24: 24px;
+  --font-line-height-28: 28px;
+  --font-line-height-32: 32px;
+  --font-line-height-36: 36px;
+  --font-line-height-40: 40px;
+  --font-line-height-44: 44px;
+  --typography-display-lg-letter-spacing: -0.01em; /** Balance hero, big amounts */
+  --typography-display-md-letter-spacing: -0.01em; /** Amount input, success amount */
+  --typography-display-sm-letter-spacing: -0.01em; /** Secondary amounts, onboarding titles */
+  --typography-heading-lg-letter-spacing: 0em; /** Page titles in content */
+  --typography-heading-md-letter-spacing: 0em; /** Section titles, bottom sheet titles */
+  --typography-heading-sm-letter-spacing: 0em; /** Card titles */
+  --typography-heading-xs-letter-spacing: 0em; /** Top bar title, list group titles */
+  --typography-body-lg-regular-letter-spacing: 0em; /** Long-form, input values */
+  --typography-body-lg-medium-letter-spacing: 0em; /** Long-form, input values */
+  --typography-body-lg-semibold-letter-spacing: 0em; /** Long-form, input values */
+  --typography-body-lg-bold-letter-spacing: 0em; /** Long-form, input values */
+  --typography-body-md-regular-letter-spacing: 0em; /** Default body text, list rows */
+  --typography-body-md-medium-letter-spacing: 0em; /** Default body text, list rows */
+  --typography-body-md-semibold-letter-spacing: 0em; /** Default body text, list rows */
+  --typography-body-md-bold-letter-spacing: 0em; /** Default body text, list rows */
+  --typography-body-sm-regular-letter-spacing: 0em; /** Helper text, meta info */
+  --typography-body-sm-medium-letter-spacing: 0em; /** Helper text, meta info */
+  --typography-body-sm-semibold-letter-spacing: 0em; /** Helper text, meta info */
+  --typography-body-sm-bold-letter-spacing: 0em; /** Helper text, meta info */
+  --typography-label-lg-letter-spacing: 0em; /** Buttons, tabs, chips, form labels */
+  --typography-label-md-letter-spacing: 0em; /** Buttons, tabs, chips, form labels */
+  --typography-label-sm-letter-spacing: 0em; /** Buttons, tabs, chips, form labels */
+  --typography-caption-regular-letter-spacing: 0em; /** Badges, legal, timestamps */
+  --typography-caption-semibold-letter-spacing: 0em; /** Badge labels, tiny emphasis */
+  --elevation-1: 0px 1px 2px 0px #1C1C1D0F, 0px 1px 3px 0px #1C1C1D1A; /** Cards, list containers resting on canvas */
+  --elevation-2: 0px 2px 4px -2px #1C1C1D0F, 0px 4px 8px -2px #1C1C1D1A; /** Dropdowns, popovers, sticky headers when scrolled */
+  --elevation-3: 0px 4px 6px -2px #1C1C1D0A, 0px 12px 16px -4px #1C1C1D1A; /** Toasts, floating action buttons */
+  --elevation-4: 0px 8px 8px -4px #1C1C1D0A, 0px 20px 24px -4px #1C1C1D1F; /** Dialogs / modals */
+  --elevation-sheet: 0px -2px 4px -2px #1C1C1D0F, 0px -8px 16px -4px #1C1C1D1A; /** Bottom sheets, bottom navigation, sticky footers (casts upward) */
+  --color-bg-canvas: var(--color-neutral-50);
+  --color-bg-surface: var(--color-base-white);
+  --color-bg-subtle: var(--color-neutral-50);
+  --color-bg-muted: var(--color-neutral-100);
+  --color-bg-disabled: var(--color-neutral-100);
+  --color-bg-inverse: var(--color-neutral-900);
+  --color-bg-brand: var(--color-red-600);
+  --color-bg-brand-pressed: var(--color-red-700);
+  --color-bg-brand-subtle: var(--color-red-50);
+  --color-bg-success: var(--color-success-600);
+  --color-bg-success-subtle: var(--color-success-50);
+  --color-bg-warning: var(--color-warning-400);
+  --color-bg-warning-subtle: var(--color-warning-50);
+  --color-bg-error: var(--color-error-600);
+  --color-bg-error-subtle: var(--color-error-50);
+  --color-bg-info: var(--color-info-600);
+  --color-bg-info-subtle: var(--color-info-50);
+  --color-bg-overlay: var(--color-alpha-black-60);
+  --color-bg-pressed: var(--color-alpha-black-8);
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-700);
+  --color-text-tertiary: var(--color-neutral-600);
+  --color-text-disabled: var(--color-neutral-400);
+  --color-text-inverse: var(--color-base-white);
+  --color-text-on-brand: var(--color-base-white);
+  --color-text-brand: var(--color-red-600);
+  --color-text-link: var(--color-blue-700);
+  --color-text-success: var(--color-success-700);
+  --color-text-warning: var(--color-warning-700);
+  --color-text-error: var(--color-error-700);
+  --color-text-info: var(--color-info-700);
+  --color-icon-primary: var(--color-neutral-900);
+  --color-icon-secondary: var(--color-neutral-700);
+  --color-icon-tertiary: var(--color-neutral-500);
+  --color-icon-disabled: var(--color-neutral-300);
+  --color-icon-inverse: var(--color-base-white);
+  --color-icon-on-brand: var(--color-base-white);
+  --color-icon-brand: var(--color-red-500);
+  --color-icon-success: var(--color-success-600);
+  --color-icon-warning: var(--color-warning-500);
+  --color-icon-error: var(--color-error-600);
+  --color-icon-info: var(--color-info-600);
+  --color-border-default: var(--color-neutral-200);
+  --color-border-subtle: var(--color-neutral-100);
+  --color-border-strong: var(--color-neutral-300);
+  --color-border-disabled: var(--color-neutral-100);
+  --color-border-focus: var(--color-blue-600);
+  --color-border-brand: var(--color-red-500);
+  --color-border-success: var(--color-success-500);
+  --color-border-warning: var(--color-warning-400);
+  --color-border-error: var(--color-error-600);
+  --color-accent-blue-bg: var(--color-blue-50);
+  --color-accent-blue-fg: var(--color-blue-700);
+  --color-accent-cyan-bg: var(--color-cyan-50);
+  --color-accent-cyan-fg: var(--color-cyan-800);
+  --color-accent-turquoise-bg: var(--color-turquoise-50);
+  --color-accent-turquoise-fg: var(--color-turquoise-800);
+  --color-accent-green-bg: var(--color-green-50);
+  --color-accent-green-fg: var(--color-green-800);
+  --color-accent-orange-bg: var(--color-orange-50);
+  --color-accent-orange-fg: var(--color-orange-700);
+  --color-accent-lime-bg: var(--color-lime-50);
+  --color-accent-lime-fg: var(--color-lime-800);
+  --spacing-none: var(--dimension-0);
+  --spacing-3xs: var(--dimension-2);
+  --spacing-2xs: var(--dimension-4);
+  --spacing-xs: var(--dimension-8);
+  --spacing-sm: var(--dimension-12);
+  --spacing-md: var(--dimension-16);
+  --spacing-lg: var(--dimension-20);
+  --spacing-xl: var(--dimension-24);
+  --spacing-2xl: var(--dimension-32);
+  --spacing-3xl: var(--dimension-40);
+  --spacing-4xl: var(--dimension-48);
+  --spacing-5xl: var(--dimension-64);
+  --layout-screen-margin: var(--dimension-16);
+  --layout-section-gap: var(--dimension-24);
+  --layout-card-padding: var(--dimension-16);
+  --layout-list-item-gap: var(--dimension-12);
+  --radius-none: var(--dimension-0);
+  --radius-xs: var(--dimension-4);
+  --radius-sm: var(--dimension-8);
+  --radius-md: var(--dimension-12);
+  --radius-lg: var(--dimension-16);
+  --radius-xl: var(--dimension-24);
+  --radius-full: var(--dimension-full);
+  --border-width-none: var(--dimension-0);
+  --border-width-thin: var(--dimension-1);
+  --border-width-thick: var(--dimension-2);
+  --typography-display-lg-font-family: var(--font-family-base); /** Balance hero, big amounts */
+  --typography-display-lg-font-weight: var(--font-weight-bold); /** Balance hero, big amounts */
+  --typography-display-lg-font-size: var(--font-size-36); /** Balance hero, big amounts */
+  --typography-display-lg-line-height: var(--font-line-height-44); /** Balance hero, big amounts */
+  --typography-display-md-font-family: var(--font-family-base); /** Amount input, success amount */
+  --typography-display-md-font-weight: var(--font-weight-bold); /** Amount input, success amount */
+  --typography-display-md-font-size: var(--font-size-32); /** Amount input, success amount */
+  --typography-display-md-line-height: var(--font-line-height-40); /** Amount input, success amount */
+  --typography-display-sm-font-family: var(--font-family-base); /** Secondary amounts, onboarding titles */
+  --typography-display-sm-font-weight: var(--font-weight-bold); /** Secondary amounts, onboarding titles */
+  --typography-display-sm-font-size: var(--font-size-28); /** Secondary amounts, onboarding titles */
+  --typography-display-sm-line-height: var(--font-line-height-36); /** Secondary amounts, onboarding titles */
+  --typography-heading-lg-font-family: var(--font-family-base); /** Page titles in content */
+  --typography-heading-lg-font-weight: var(--font-weight-semibold); /** Page titles in content */
+  --typography-heading-lg-font-size: var(--font-size-24); /** Page titles in content */
+  --typography-heading-lg-line-height: var(--font-line-height-32); /** Page titles in content */
+  --typography-heading-md-font-family: var(--font-family-base); /** Section titles, bottom sheet titles */
+  --typography-heading-md-font-weight: var(--font-weight-semibold); /** Section titles, bottom sheet titles */
+  --typography-heading-md-font-size: var(--font-size-20); /** Section titles, bottom sheet titles */
+  --typography-heading-md-line-height: var(--font-line-height-28); /** Section titles, bottom sheet titles */
+  --typography-heading-sm-font-family: var(--font-family-base); /** Card titles */
+  --typography-heading-sm-font-weight: var(--font-weight-semibold); /** Card titles */
+  --typography-heading-sm-font-size: var(--font-size-18); /** Card titles */
+  --typography-heading-sm-line-height: var(--font-line-height-24); /** Card titles */
+  --typography-heading-xs-font-family: var(--font-family-base); /** Top bar title, list group titles */
+  --typography-heading-xs-font-weight: var(--font-weight-semibold); /** Top bar title, list group titles */
+  --typography-heading-xs-font-size: var(--font-size-16); /** Top bar title, list group titles */
+  --typography-heading-xs-line-height: var(--font-line-height-24); /** Top bar title, list group titles */
+  --typography-body-lg-regular-font-family: var(--font-family-base); /** Long-form, input values */
+  --typography-body-lg-regular-font-weight: var(--font-weight-regular); /** Long-form, input values */
+  --typography-body-lg-regular-font-size: var(--font-size-16); /** Long-form, input values */
+  --typography-body-lg-regular-line-height: var(--font-line-height-20); /** Long-form, input values */
+  --typography-body-lg-medium-font-family: var(--font-family-base); /** Long-form, input values */
+  --typography-body-lg-medium-font-weight: var(--font-weight-medium); /** Long-form, input values */
+  --typography-body-lg-medium-font-size: var(--font-size-16); /** Long-form, input values */
+  --typography-body-lg-medium-line-height: var(--font-line-height-20); /** Long-form, input values */
+  --typography-body-lg-semibold-font-family: var(--font-family-base); /** Long-form, input values */
+  --typography-body-lg-semibold-font-weight: var(--font-weight-semibold); /** Long-form, input values */
+  --typography-body-lg-semibold-font-size: var(--font-size-16); /** Long-form, input values */
+  --typography-body-lg-semibold-line-height: var(--font-line-height-20); /** Long-form, input values */
+  --typography-body-lg-bold-font-family: var(--font-family-base); /** Long-form, input values */
+  --typography-body-lg-bold-font-weight: var(--font-weight-bold); /** Long-form, input values */
+  --typography-body-lg-bold-font-size: var(--font-size-16); /** Long-form, input values */
+  --typography-body-lg-bold-line-height: var(--font-line-height-20); /** Long-form, input values */
+  --typography-body-md-regular-font-family: var(--font-family-base); /** Default body text, list rows */
+  --typography-body-md-regular-font-weight: var(--font-weight-regular); /** Default body text, list rows */
+  --typography-body-md-regular-font-size: var(--font-size-14); /** Default body text, list rows */
+  --typography-body-md-regular-line-height: var(--font-line-height-20); /** Default body text, list rows */
+  --typography-body-md-medium-font-family: var(--font-family-base); /** Default body text, list rows */
+  --typography-body-md-medium-font-weight: var(--font-weight-medium); /** Default body text, list rows */
+  --typography-body-md-medium-font-size: var(--font-size-14); /** Default body text, list rows */
+  --typography-body-md-medium-line-height: var(--font-line-height-20); /** Default body text, list rows */
+  --typography-body-md-semibold-font-family: var(--font-family-base); /** Default body text, list rows */
+  --typography-body-md-semibold-font-weight: var(--font-weight-semibold); /** Default body text, list rows */
+  --typography-body-md-semibold-font-size: var(--font-size-14); /** Default body text, list rows */
+  --typography-body-md-semibold-line-height: var(--font-line-height-20); /** Default body text, list rows */
+  --typography-body-md-bold-font-family: var(--font-family-base); /** Default body text, list rows */
+  --typography-body-md-bold-font-weight: var(--font-weight-bold); /** Default body text, list rows */
+  --typography-body-md-bold-font-size: var(--font-size-14); /** Default body text, list rows */
+  --typography-body-md-bold-line-height: var(--font-line-height-20); /** Default body text, list rows */
+  --typography-body-sm-regular-font-family: var(--font-family-base); /** Helper text, meta info */
+  --typography-body-sm-regular-font-weight: var(--font-weight-regular); /** Helper text, meta info */
+  --typography-body-sm-regular-font-size: var(--font-size-12); /** Helper text, meta info */
+  --typography-body-sm-regular-line-height: var(--font-line-height-16); /** Helper text, meta info */
+  --typography-body-sm-medium-font-family: var(--font-family-base); /** Helper text, meta info */
+  --typography-body-sm-medium-font-weight: var(--font-weight-medium); /** Helper text, meta info */
+  --typography-body-sm-medium-font-size: var(--font-size-12); /** Helper text, meta info */
+  --typography-body-sm-medium-line-height: var(--font-line-height-16); /** Helper text, meta info */
+  --typography-body-sm-semibold-font-family: var(--font-family-base); /** Helper text, meta info */
+  --typography-body-sm-semibold-font-weight: var(--font-weight-semibold); /** Helper text, meta info */
+  --typography-body-sm-semibold-font-size: var(--font-size-12); /** Helper text, meta info */
+  --typography-body-sm-semibold-line-height: var(--font-line-height-16); /** Helper text, meta info */
+  --typography-body-sm-bold-font-family: var(--font-family-base); /** Helper text, meta info */
+  --typography-body-sm-bold-font-weight: var(--font-weight-bold); /** Helper text, meta info */
+  --typography-body-sm-bold-font-size: var(--font-size-12); /** Helper text, meta info */
+  --typography-body-sm-bold-line-height: var(--font-line-height-16); /** Helper text, meta info */
+  --typography-label-lg-font-family: var(--font-family-base); /** Buttons, tabs, chips, form labels */
+  --typography-label-lg-font-weight: var(--font-weight-semibold); /** Buttons, tabs, chips, form labels */
+  --typography-label-lg-font-size: var(--font-size-16); /** Buttons, tabs, chips, form labels */
+  --typography-label-lg-line-height: var(--font-line-height-20); /** Buttons, tabs, chips, form labels */
+  --typography-label-md-font-family: var(--font-family-base); /** Buttons, tabs, chips, form labels */
+  --typography-label-md-font-weight: var(--font-weight-semibold); /** Buttons, tabs, chips, form labels */
+  --typography-label-md-font-size: var(--font-size-14); /** Buttons, tabs, chips, form labels */
+  --typography-label-md-line-height: var(--font-line-height-20); /** Buttons, tabs, chips, form labels */
+  --typography-label-sm-font-family: var(--font-family-base); /** Buttons, tabs, chips, form labels */
+  --typography-label-sm-font-weight: var(--font-weight-semibold); /** Buttons, tabs, chips, form labels */
+  --typography-label-sm-font-size: var(--font-size-12); /** Buttons, tabs, chips, form labels */
+  --typography-label-sm-line-height: var(--font-line-height-16); /** Buttons, tabs, chips, form labels */
+  --typography-caption-regular-font-family: var(--font-family-base); /** Badges, legal, timestamps */
+  --typography-caption-regular-font-weight: var(--font-weight-regular); /** Badges, legal, timestamps */
+  --typography-caption-regular-font-size: var(--font-size-10); /** Badges, legal, timestamps */
+  --typography-caption-regular-line-height: var(--font-line-height-14); /** Badges, legal, timestamps */
+  --typography-caption-semibold-font-family: var(--font-family-base); /** Badge labels, tiny emphasis */
+  --typography-caption-semibold-font-weight: var(--font-weight-semibold); /** Badge labels, tiny emphasis */
+  --typography-caption-semibold-font-size: var(--font-size-10); /** Badge labels, tiny emphasis */
+  --typography-caption-semibold-line-height: var(--font-line-height-14); /** Badge labels, tiny emphasis */
+}

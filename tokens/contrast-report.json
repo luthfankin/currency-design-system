@@ -1,0 +1,247 @@
+[
+  {
+    "fg": "text/primary",
+    "bg": "bg/surface",
+    "ratio": 14.53,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/secondary",
+    "bg": "bg/surface",
+    "ratio": 7.45,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/tertiary",
+    "bg": "bg/surface",
+    "ratio": 5.17,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/secondary",
+    "bg": "bg/canvas",
+    "ratio": 6.89,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/tertiary",
+    "bg": "bg/canvas",
+    "ratio": 4.79,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/secondary",
+    "bg": "bg/muted",
+    "ratio": 6.14,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/brand",
+    "bg": "bg/surface",
+    "ratio": 5.88,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/brand",
+    "bg": "bg/canvas",
+    "ratio": 5.44,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/link",
+    "bg": "bg/surface",
+    "ratio": 6.61,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/link",
+    "bg": "bg/canvas",
+    "ratio": 6.12,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/success",
+    "bg": "bg/success-subtle",
+    "ratio": 6.13,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/warning",
+    "bg": "bg/warning-subtle",
+    "ratio": 6.21,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/error",
+    "bg": "bg/error-subtle",
+    "ratio": 6.47,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/info",
+    "bg": "bg/info-subtle",
+    "ratio": 6.83,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/on-brand",
+    "bg": "bg/brand",
+    "ratio": 5.88,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/on-brand",
+    "bg": "bg/brand-pressed",
+    "ratio": 7.25,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/inverse",
+    "bg": "bg/success",
+    "ratio": 4.63,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/inverse",
+    "bg": "bg/info",
+    "ratio": 5.17,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/inverse",
+    "bg": "bg/error",
+    "ratio": 4.83,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/primary",
+    "bg": "bg/warning",
+    "ratio": 6.77,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "text/inverse",
+    "bg": "bg/inverse",
+    "ratio": 14.53,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "accent/blue/fg",
+    "bg": "accent/blue/bg",
+    "ratio": 6.08,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "accent/cyan/fg",
+    "bg": "accent/cyan/bg",
+    "ratio": 6.82,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "accent/turquoise/fg",
+    "bg": "accent/turquoise/bg",
+    "ratio": 7.92,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "accent/green/fg",
+    "bg": "accent/green/bg",
+    "ratio": 8.02,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "accent/orange/fg",
+    "bg": "accent/orange/bg",
+    "ratio": 6.21,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "accent/lime/fg",
+    "bg": "accent/lime/bg",
+    "ratio": 7.07,
+    "min": 4.5,
+    "pass": true
+  },
+  {
+    "fg": "icon/secondary",
+    "bg": "bg/surface",
+    "ratio": 7.45,
+    "min": 3,
+    "pass": true
+  },
+  {
+    "fg": "icon/tertiary",
+    "bg": "bg/surface",
+    "ratio": 3.69,
+    "min": 3,
+    "pass": true
+  },
+  {
+    "fg": "icon/brand",
+    "bg": "bg/surface",
+    "ratio": 3.99,
+    "min": 3,
+    "pass": true
+  },
+  {
+    "fg": "icon/success",
+    "bg": "bg/surface",
+    "ratio": 4.63,
+    "min": 3,
+    "pass": true
+  },
+  {
+    "fg": "icon/warning",
+    "bg": "bg/surface",
+    "ratio": 3.12,
+    "min": 3,
+    "pass": true
+  },
+  {
+    "fg": "icon/error",
+    "bg": "bg/surface",
+    "ratio": 4.83,
+    "min": 3,
+    "pass": true
+  },
+  {
+    "fg": "border/focus",
+    "bg": "bg/surface",
+    "ratio": 4.83,
+    "min": 3,
+    "pass": true
+  },
+  {
+    "fg": "border/strong",
+    "bg": "bg/surface",
+    "ratio": 1.9,
+    "min": 1.4,
+    "pass": true
+  }
+]

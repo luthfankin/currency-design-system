@@ -1,0 +1,774 @@
+{
+  "color": {
+    "bg": {
+      "canvas": {
+        "$type": "color",
+        "$value": "{color.neutral.50}"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.base.white}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.neutral.50}"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{color.neutral.100}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.neutral.100}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.neutral.900}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{color.red.600}"
+      },
+      "brand-pressed": {
+        "$type": "color",
+        "$value": "{color.red.700}"
+      },
+      "brand-subtle": {
+        "$type": "color",
+        "$value": "{color.red.50}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.success.600}"
+      },
+      "success-subtle": {
+        "$type": "color",
+        "$value": "{color.success.50}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.warning.400}"
+      },
+      "warning-subtle": {
+        "$type": "color",
+        "$value": "{color.warning.50}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.error.600}"
+      },
+      "error-subtle": {
+        "$type": "color",
+        "$value": "{color.error.50}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{color.info.600}"
+      },
+      "info-subtle": {
+        "$type": "color",
+        "$value": "{color.info.50}"
+      },
+      "overlay": {
+        "$type": "color",
+        "$value": "{color.alpha.black-60}"
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{color.alpha.black-8}"
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.neutral.900}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.neutral.700}"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.neutral.600}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.neutral.400}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.base.white}"
+      },
+      "on-brand": {
+        "$type": "color",
+        "$value": "{color.base.white}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{color.red.600}"
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{color.blue.700}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.success.700}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.warning.700}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.error.700}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{color.info.700}"
+      }
+    },
+    "icon": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.neutral.900}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.neutral.700}"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.neutral.500}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.neutral.300}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.base.white}"
+      },
+      "on-brand": {
+        "$type": "color",
+        "$value": "{color.base.white}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{color.red.500}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.success.600}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.warning.500}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.error.600}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{color.info.600}"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.neutral.200}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.neutral.100}"
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{color.neutral.300}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.neutral.100}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{color.blue.600}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{color.red.500}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.success.500}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.warning.400}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.error.600}"
+      }
+    },
+    "accent": {
+      "blue": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.blue.50}"
+        },
+        "fg": {
+          "$type": "color",
+          "$value": "{color.blue.700}"
+        }
+      },
+      "cyan": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.cyan.50}"
+        },
+        "fg": {
+          "$type": "color",
+          "$value": "{color.cyan.800}"
+        }
+      },
+      "turquoise": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.turquoise.50}"
+        },
+        "fg": {
+          "$type": "color",
+          "$value": "{color.turquoise.800}"
+        }
+      },
+      "green": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.green.50}"
+        },
+        "fg": {
+          "$type": "color",
+          "$value": "{color.green.800}"
+        }
+      },
+      "orange": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.orange.50}"
+        },
+        "fg": {
+          "$type": "color",
+          "$value": "{color.orange.700}"
+        }
+      },
+      "lime": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.lime.50}"
+        },
+        "fg": {
+          "$type": "color",
+          "$value": "{color.lime.800}"
+        }
+      }
+    }
+  },
+  "spacing": {
+    "none": {
+      "$type": "dimension",
+      "$value": "{dimension.0}"
+    },
+    "3xs": {
+      "$type": "dimension",
+      "$value": "{dimension.2}"
+    },
+    "2xs": {
+      "$type": "dimension",
+      "$value": "{dimension.4}"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$value": "{dimension.8}"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "{dimension.12}"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "{dimension.16}"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "{dimension.20}"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "{dimension.24}"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "{dimension.32}"
+    },
+    "3xl": {
+      "$type": "dimension",
+      "$value": "{dimension.40}"
+    },
+    "4xl": {
+      "$type": "dimension",
+      "$value": "{dimension.48}"
+    },
+    "5xl": {
+      "$type": "dimension",
+      "$value": "{dimension.64}"
+    }
+  },
+  "layout": {
+    "screen-margin": {
+      "$type": "dimension",
+      "$value": "{dimension.16}"
+    },
+    "section-gap": {
+      "$type": "dimension",
+      "$value": "{dimension.24}"
+    },
+    "card-padding": {
+      "$type": "dimension",
+      "$value": "{dimension.16}"
+    },
+    "list-item-gap": {
+      "$type": "dimension",
+      "$value": "{dimension.12}"
+    }
+  },
+  "radius": {
+    "none": {
+      "$type": "dimension",
+      "$value": "{dimension.0}"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$value": "{dimension.4}"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "{dimension.8}"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "{dimension.12}"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "{dimension.16}"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "{dimension.24}"
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": "{dimension.full}"
+    }
+  },
+  "border-width": {
+    "none": {
+      "$type": "dimension",
+      "$value": "{dimension.0}"
+    },
+    "thin": {
+      "$type": "dimension",
+      "$value": "{dimension.1}"
+    },
+    "thick": {
+      "$type": "dimension",
+      "$value": "{dimension.2}"
+    }
+  },
+  "typography": {
+    "display": {
+      "lg": {
+        "$type": "typography",
+        "$description": "Balance hero, big amounts",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.bold}",
+          "fontSize": "{font.size.36}",
+          "lineHeight": "{font.line-height.44}",
+          "letterSpacing": "-0.01em"
+        }
+      },
+      "md": {
+        "$type": "typography",
+        "$description": "Amount input, success amount",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.bold}",
+          "fontSize": "{font.size.32}",
+          "lineHeight": "{font.line-height.40}",
+          "letterSpacing": "-0.01em"
+        }
+      },
+      "sm": {
+        "$type": "typography",
+        "$description": "Secondary amounts, onboarding titles",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.bold}",
+          "fontSize": "{font.size.28}",
+          "lineHeight": "{font.line-height.36}",
+          "letterSpacing": "-0.01em"
+        }
+      }
+    },
+    "heading": {
+      "lg": {
+        "$type": "typography",
+        "$description": "Page titles in content",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.24}",
+          "lineHeight": "{font.line-height.32}",
+          "letterSpacing": "0em"
+        }
+      },
+      "md": {
+        "$type": "typography",
+        "$description": "Section titles, bottom sheet titles",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.20}",
+          "lineHeight": "{font.line-height.28}",
+          "letterSpacing": "0em"
+        }
+      },
+      "sm": {
+        "$type": "typography",
+        "$description": "Card titles",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.18}",
+          "lineHeight": "{font.line-height.24}",
+          "letterSpacing": "0em"
+        }
+      },
+      "xs": {
+        "$type": "typography",
+        "$description": "Top bar title, list group titles",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.16}",
+          "lineHeight": "{font.line-height.24}",
+          "letterSpacing": "0em"
+        }
+      }
+    },
+    "body": {
+      "lg": {
+        "regular": {
+          "$type": "typography",
+          "$description": "Long-form, input values",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "fontSize": "{font.size.16}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        },
+        "medium": {
+          "$type": "typography",
+          "$description": "Long-form, input values",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.medium}",
+            "fontSize": "{font.size.16}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        },
+        "semibold": {
+          "$type": "typography",
+          "$description": "Long-form, input values",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.semibold}",
+            "fontSize": "{font.size.16}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        },
+        "bold": {
+          "$type": "typography",
+          "$description": "Long-form, input values",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.bold}",
+            "fontSize": "{font.size.16}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        }
+      },
+      "md": {
+        "regular": {
+          "$type": "typography",
+          "$description": "Default body text, list rows",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "fontSize": "{font.size.14}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        },
+        "medium": {
+          "$type": "typography",
+          "$description": "Default body text, list rows",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.medium}",
+            "fontSize": "{font.size.14}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        },
+        "semibold": {
+          "$type": "typography",
+          "$description": "Default body text, list rows",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.semibold}",
+            "fontSize": "{font.size.14}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        },
+        "bold": {
+          "$type": "typography",
+          "$description": "Default body text, list rows",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.bold}",
+            "fontSize": "{font.size.14}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        }
+      },
+      "sm": {
+        "regular": {
+          "$type": "typography",
+          "$description": "Helper text, meta info",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.regular}",
+            "fontSize": "{font.size.12}",
+            "lineHeight": "{font.line-height.16}",
+            "letterSpacing": "0em"
+          }
+        },
+        "medium": {
+          "$type": "typography",
+          "$description": "Helper text, meta info",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.medium}",
+            "fontSize": "{font.size.12}",
+            "lineHeight": "{font.line-height.16}",
+            "letterSpacing": "0em"
+          }
+        },
+        "semibold": {
+          "$type": "typography",
+          "$description": "Helper text, meta info",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.semibold}",
+            "fontSize": "{font.size.12}",
+            "lineHeight": "{font.line-height.16}",
+            "letterSpacing": "0em"
+          }
+        },
+        "bold": {
+          "$type": "typography",
+          "$description": "Helper text, meta info",
+          "$value": {
+            "fontFamily": "{font.family.base}",
+            "fontWeight": "{font.weight.bold}",
+            "fontSize": "{font.size.12}",
+            "lineHeight": "{font.line-height.16}",
+            "letterSpacing": "0em"
+          }
+        }
+      }
+    },
+    "label": {
+      "lg": {
+        "$type": "typography",
+        "$description": "Buttons, tabs, chips, form labels",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.16}",
+          "lineHeight": "{font.line-height.20}",
+          "letterSpacing": "0em"
+        }
+      },
+      "md": {
+        "$type": "typography",
+        "$description": "Buttons, tabs, chips, form labels",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.14}",
+          "lineHeight": "{font.line-height.20}",
+          "letterSpacing": "0em"
+        }
+      },
+      "sm": {
+        "$type": "typography",
+        "$description": "Buttons, tabs, chips, form labels",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.12}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "0em"
+        }
+      }
+    },
+    "caption": {
+      "regular": {
+        "$type": "typography",
+        "$description": "Badges, legal, timestamps",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.regular}",
+          "fontSize": "{font.size.10}",
+          "lineHeight": "{font.line-height.14}",
+          "letterSpacing": "0em"
+        }
+      },
+      "semibold": {
+        "$type": "typography",
+        "$description": "Badge labels, tiny emphasis",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.10}",
+          "lineHeight": "{font.line-height.14}",
+          "letterSpacing": "0em"
+        }
+      }
+    }
+  },
+  "elevation": {
+    "1": {
+      "$type": "shadow",
+      "$description": "Cards, list containers resting on canvas",
+      "$value": [
+        {
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "2px",
+          "spread": "0px",
+          "color": "#1C1C1D0F"
+        },
+        {
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "3px",
+          "spread": "0px",
+          "color": "#1C1C1D1A"
+        }
+      ]
+    },
+    "2": {
+      "$type": "shadow",
+      "$description": "Dropdowns, popovers, sticky headers when scrolled",
+      "$value": [
+        {
+          "offsetX": "0px",
+          "offsetY": "2px",
+          "blur": "4px",
+          "spread": "-2px",
+          "color": "#1C1C1D0F"
+        },
+        {
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "8px",
+          "spread": "-2px",
+          "color": "#1C1C1D1A"
+        }
+      ]
+    },
+    "3": {
+      "$type": "shadow",
+      "$description": "Toasts, floating action buttons",
+      "$value": [
+        {
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "6px",
+          "spread": "-2px",
+          "color": "#1C1C1D0A"
+        },
+        {
+          "offsetX": "0px",
+          "offsetY": "12px",
+          "blur": "16px",
+          "spread": "-4px",
+          "color": "#1C1C1D1A"
+        }
+      ]
+    },
+    "4": {
+      "$type": "shadow",
+      "$description": "Dialogs / modals",
+      "$value": [
+        {
+          "offsetX": "0px",
+          "offsetY": "8px",
+          "blur": "8px",
+          "spread": "-4px",
+          "color": "#1C1C1D0A"
+        },
+        {
+          "offsetX": "0px",
+          "offsetY": "20px",
+          "blur": "24px",
+          "spread": "-4px",
+          "color": "#1C1C1D1F"
+        }
+      ]
+    },
+    "sheet": {
+      "$type": "shadow",
+      "$description": "Bottom sheets, bottom navigation, sticky footers (casts upward)",
+      "$value": [
+        {
+          "offsetX": "0px",
+          "offsetY": "-2px",
+          "blur": "4px",
+          "spread": "-2px",
+          "color": "#1C1C1D0F"
+        },
+        {
+          "offsetX": "0px",
+          "offsetY": "-8px",
+          "blur": "16px",
+          "spread": "-4px",
+          "color": "#1C1C1D1A"
+        }
+      ]
+    }
+  }
+}

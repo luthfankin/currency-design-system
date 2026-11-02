@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Do not edit directly, this file was auto-generated from tokens/ by build.mjs. -->
+<resources>
+  <!-- Cards, list containers resting on canvas -->
+  <dimen name="elevation_1">2.00dp</dimen>
+  <!-- Dropdowns, popovers, sticky headers when scrolled -->
+  <dimen name="elevation_2">4.00dp</dimen>
+  <!-- Toasts, floating action buttons -->
+  <dimen name="elevation_3">8.00dp</dimen>
+  <!-- Dialogs / modals -->
+  <dimen name="elevation_4">16.00dp</dimen>
+  <!-- Bottom sheets, bottom navigation, sticky footers (casts upward) -->
+  <dimen name="elevation_sheet">16.00dp</dimen>
+</resources>

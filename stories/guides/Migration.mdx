@@ -1,0 +1,26 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Guides/Migrating from 1.x" />
+
+# Migrating from Currency 1.x
+
+The full style-by-style map is on the **Migration map** page in Figma and in `docs/migration-*.csv`.
+
+## What changed
+
+- **New palette** (DOKU by Antom). Colors shift on purpose, median ΔE 3.8.
+- **Step names** go from `5, 10…100` to `50, 100…950` (higher = darker, as before). Figma `Red/50` = token `red/500`.
+- **Legacy hue → new family:** Neutral → `neutral` (now pure gray), Red → `red`, Blue → `blue`, Cyan and Green (it was teal) → `cyan`, Yellow → `orange`.
+- **Pink and Purple are retired.** Re-pick those uses from `color/accent/*`.
+- **Status colors** have their own ramps: `success`, `warning`, `error`, `info`. The 1.x `danger` naming is now **`error`**.
+- **Brand fills** use red/600, because white text on pure red/500 fails AA.
+- **Typography:** 21 size × weight styles become 24 role-based ones (display, heading, body, label, caption). Line heights snap to a 4 px grid: 12/18 → 12/16, 20/26 → 20/28.
+- **Spacing:** off-grid values (10, 14, 9.5, 23…) map to the nearest step on the 4 px scale.
+- **Radius:** the 13 legacy radii collapse into 7 steps.
+- **Elevation:** one-off shadows are replaced by 4 levels plus `sheet`.
+
+## Suggested order
+
+1. Ship the token files (iOS / Android) alongside the current styles. Nothing breaks.
+2. Move screens to **semantic** tokens one feature at a time, starting with shared components (button, input, list row).
+3. Delete the 1.x color and text constants once nothing references them.

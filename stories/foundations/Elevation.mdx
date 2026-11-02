@@ -1,0 +1,22 @@
+import { Meta } from '@storybook/blocks';
+import { ElevationScale } from '../../storybook/foundations';
+
+<Meta title="Foundations/Elevation" />
+
+# Elevation
+
+Four levels, plus an upward `sheet` shadow for bottom sheets, bottom navigation and sticky footers.
+Each level has two layers: a tight contact shadow and a soft ambient one, both tinted with `neutral/950`.
+**Prefer a border over a shadow** for anything resting flat on the page.
+
+| Level | Use for |
+|---|---|
+| `elevation/1` | Cards, list containers on the canvas |
+| `elevation/2` | Dropdowns, popovers, sticky headers once scrolled |
+| `elevation/3` | Toasts, floating action buttons |
+| `elevation/4` | Dialogs / modals |
+| `elevation/sheet` | Bottom sheets, bottom navigation, sticky footers (casts upward) |
+
+<ElevationScale />
+
+Native platforms can't draw two blurred layers per view cheaply. The table above gives the single-layer approximation for each platform: on iOS use the larger ambient layer, on Android use the `elevation` value.

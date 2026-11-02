@@ -1,0 +1,59 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Guides/Android" />
+
+# Using Currency tokens on Android
+
+`npm run build` generates three resource files in `build/android/`:
+
+| File | Contains |
+|---|---|
+| `currency_colors.xml` | `@color/…` for every primitive and semantic color |
+| `currency_dimens.xml` | `@dimen/…` for spacing, radius, border width (`dp`) and font sizes (`sp`) |
+| `currency_elevation.xml` | `@dimen/elevation_1 … elevation_4`, `elevation_sheet` |
+
+## 1. Add to the project
+
+Copy them into `res/values/` of the app (or a shared `designsystem` module), and add **Inter** to `res/font/`.
+Re-copy them whenever tokens change; never edit them by hand.
+
+## 2. Use semantic tokens
+
+```xml
+<com.google.android.material.button.MaterialButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/spacing_md"
+    android:paddingVertical="@dimen/spacing_sm"
+    android:textSize="@dimen/typography_label_lg_font_size"
+    android:textColor="@color/color_text_on_brand"
+    app:backgroundTint="@color/color_bg_brand"
+    app:cornerRadius="@dimen/radius_sm" />
+
+<com.google.android.material.card.MaterialCardView
+    app:cardBackgroundColor="@color/color_bg_surface"
+    app:cardCornerRadius="@dimen/radius_md"
+    app:cardElevation="@dimen/elevation_1" />
+```
+
+### Jetpack Compose
+
+```kotlin
+Text(
+    text = "Rp1.250.000",
+    color = colorResource(R.color.color_text_primary),
+    fontSize = dimensionResource(R.dimen.typography_display_lg_font_size).value.sp,
+    lineHeight = dimensionResource(R.dimen.typography_display_lg_line_height).value.sp,
+    letterSpacing = (-0.01).em,          // typography/display/lg letter-spacing
+    fontWeight = FontWeight.Bold,
+    fontFeatureSettings = "tnum",        // tabular figures for amounts
+)
+```
+
+## Notes
+
+- **Units:** token px = `dp`, 1:1. Font sizes are `sp`, so they follow the user's font scale. Test at 1.3×.
+- **Line height:** use `android:lineHeight` (API 28+) with the `…_line_height` dimen.
+- **Letter spacing** is in em, which is also Android's unit, so use the value directly. It isn't in the XML because Android dimens need a unit.
+- **Font weight** 400 / 500 / 600 / 700 maps to `Inter` Regular, Medium, SemiBold, Bold in your `font-family` resource.
+- **`radius/full`** is 9999dp, which Material clamps to a pill shape.

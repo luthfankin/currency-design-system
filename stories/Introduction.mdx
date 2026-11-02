@@ -1,0 +1,32 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction" />
+
+<div className="sb-unstyled cx">
+  <div style={{ background: 'var(--color-bg-brand)', color: 'var(--color-text-on-brand)', borderRadius: 'var(--radius-lg)', padding: 'var(--spacing-3xl) var(--spacing-2xl)', margin: '0 0 var(--spacing-2xl)' }}>
+    <div style={{ fontSize: 14, fontWeight: 600, opacity: 0.85 }}>DOKU e-Wallet · Design System</div>
+    <div style={{ fontSize: 'var(--typography-display-lg-font-size)', lineHeight: 'var(--typography-display-lg-line-height)', fontWeight: 700, letterSpacing: 'var(--typography-display-lg-letter-spacing)', margin: '8px 0' }}>Currency 2.0</div>
+    <div style={{ fontSize: 16, lineHeight: '24px', opacity: 0.9, maxWidth: 640 }}>The shared reference for designers and iOS / Android engineers. Every value on these pages is rendered from the same tokens that generate the app's Swift and Android resources.</div>
+  </div>
+</div>
+
+## What's here
+
+| Section | What you'll find |
+|---|---|
+| **Foundations** | Color, Typography, Spacing, Radius & Border, Elevation, each with live previews and copy-ready token names for iOS, Android, Web and Figma |
+| **Guides** | How to add the tokens to the iOS and Android apps, and how 1.x styles map to 2.0 |
+| **Components** | Coming next, moved over from Figma one by one |
+
+## Golden rules
+
+1. **Use semantic tokens in UI**: `color/bg/brand`, `spacing/md`, `radius/sm`. Never raw hex values or primitives like `red/600`.
+2. **One source of truth.** Values live in `tokens/*.tokens.json`. Change them there (or in Figma first, then sync), then run `npm run build`. Never edit the generated Swift / XML files.
+3. **Names match everywhere.** `color/bg/brand` in Figma = `CurrencyTokens.colorBgBrand` on iOS = `@color/color_bg_brand` on Android = `var(--color-bg-brand)` on web.
+4. **Accessibility is built in.** Text/background pairs from the semantic set pass WCAG AA. If you combine tokens in a new way, check it on the Color page.
+
+## Status
+
+`2.0.0-alpha.1` · Light theme only · Font: Inter (Regular, Medium, SemiBold, Bold)
+
+**Links:** [Figma library](https://www.figma.com/design/TORXr3LEX2YXuMkSOQ2C8C/)

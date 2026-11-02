@@ -1,0 +1,16 @@
+import { Meta } from '@storybook/blocks';
+import { TypeScale } from '../../storybook/foundations';
+
+<Meta title="Foundations/Typography" />
+
+# Typography
+
+Inter, 24 role-based styles. Sizes and line heights sit on a 4 px grid; caption (10/14) is the one exception.
+Each style is a Figma text style with the same name, and each property is its own token.
+
+- **display**: amounts and hero numbers. Uses tabular figures so digits don't shift (`.monospacedDigit()` in SwiftUI, `fontFeatureSettings = "tnum"` on Android).
+- **heading**: titles. **body**: reading text, in four weights. **label**: buttons, tabs, chips, form labels. **caption**: badges, timestamps.
+- **Letter spacing** is in `em` (display styles only, −0.01em). iOS `kern` takes points, so use `letterSpacing × fontSize`. Android `letterSpacing` takes em, so use the value as-is.
+- **Font size on Android** is in `sp`, so it follows the user's font-size setting. Check that layouts still work at 1.3× scale.
+
+<TypeScale />

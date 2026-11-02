@@ -1,0 +1,44 @@
+category,legacy,legacy_spec,new,notes
+typography,Text/xl/regular,20/26 Regular,heading/md,weight → Semi Bold; use body/lg if it is not a title
+typography,Text/xl/medium,20/26 Medium,heading/md,weight → Semi Bold
+typography,Text/xl/semibold,20/26 Semi Bold,heading/md,line height 26 → 28
+typography,Text/xl/bold,20/26 Bold,heading/md,weight → Semi Bold; use display/sm for amounts
+typography,Text/lg/regular,16/20 Regular,body/lg/regular,no change
+typography,Text/lg/medium,16/20 Medium,body/lg/medium,no change
+typography,Text/lg/semibold,16/20 Semi Bold,label/lg  or  heading/xs,label/lg for buttons (16/20); heading/xs for titles
+typography,Text/lg/bold,16/20 Bold,body/lg/bold,no change
+typography,Text/md/regular,14/20 Regular,body/md/regular,no change
+typography,Text/md/medium,14/20 Medium,body/md/medium,no change
+typography,Text/md/semibold,14/20 Semi Bold,body/md/semibold  or  label/md,"label/md for buttons, tabs"
+typography,Text/md/bold,14/20 Bold,body/md/bold,no change
+typography,Text/sm/regular,12/18 Regular,body/sm/regular,line height 18 → 16
+typography,Text/sm/medium,12/18 Medium,body/sm/medium,line height 18 → 16
+typography,Text/sm/semibold,12/18 Semi Bold,body/sm/semibold  or  label/sm,line height 18 → 16
+typography,Text/sm/bold,12/18 Bold,body/sm/bold,line height 18 → 16
+typography,Text/xs/regular,10/14 Regular,caption/regular,no change
+typography,Text/xs/medium,10/14 Medium,caption/regular,weight → Regular
+typography,Text/xs/semibold,10/14 Semi Bold,caption/semibold,no change
+typography,Text/xs/bold,10/14 Bold,caption/semibold,weight → Semi Bold
+typography,Heading/h5,20/auto Semi Bold,heading/md,fixed line height 28
+typography,(unstyled 24/28/36/48 px),raw values,heading/lg · display/sm · display/lg,48 px is retired: use display/lg
+spacing,0 px,,spacing/none,
+spacing,1–2 px,,spacing/3xs,
+spacing,3–5 px,,spacing/2xs,
+spacing,6 px,,spacing/2xs or xs (by context),
+spacing,8–9.5 px,,spacing/xs,
+spacing,10 px,,spacing/xs (gaps) · spacing/sm (padding),
+spacing,12–13 px,,spacing/sm,
+spacing,14 px,,spacing/md,
+spacing,16–17 px,,spacing/md,
+spacing,20 px,,spacing/lg,
+spacing,23–28 px,,spacing/xl,
+spacing,31–34 px,,spacing/2xl,
+spacing,38–40 px,,spacing/3xl,
+spacing,47–56 px,,spacing/4xl,
+spacing,63–72 px,,spacing/5xl,
+radius,2–5 px,,radius/xs,
+radius,6–10 px,,radius/sm,
+radius,12 px,,radius/md,
+radius,16 px,,radius/lg,
+radius,20–24 px,,radius/xl,
+radius,"40, 56, 100, 162 px",,radius/full,

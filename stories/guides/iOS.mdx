@@ -1,0 +1,51 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Guides/iOS" />
+
+# Using Currency tokens on iOS
+
+`npm run build` generates two Swift files in `build/ios/`:
+
+| File | Contains |
+|---|---|
+| `CurrencyTokens.swift` | Colors (`UIColor`), spacing / radius / border / type sizes (`CGFloat`), font weights and letter spacing |
+| `CurrencyElevation.swift` | `CurrencyShadow` presets and `CALayer.applyCurrencyShadow(_:)` |
+
+## 1. Add to the project
+
+Copy both files into the app (or a shared design-system Swift package) and bundle **Inter** (Regular, Medium, SemiBold, Bold) via `UIAppFonts` in `Info.plist`.
+Re-copy them whenever tokens change; never edit them by hand.
+
+## 2. Use semantic tokens
+
+```swift
+let button = UIButton(type: .system)
+button.backgroundColor = CurrencyTokens.colorBgBrand
+button.setTitleColor(CurrencyTokens.colorTextOnBrand, for: .normal)
+button.layer.cornerRadius = CurrencyTokens.radiusSm
+button.contentEdgeInsets = UIEdgeInsets(
+    top: CurrencyTokens.spacingSm, left: CurrencyTokens.spacingMd,
+    bottom: CurrencyTokens.spacingSm, right: CurrencyTokens.spacingMd)
+
+card.layer.applyCurrencyShadow(.level1)
+sheet.layer.applyCurrencyShadow(.sheet)
+```
+
+### SwiftUI
+
+```swift
+Text("Rp1.250.000")
+    .font(.custom("Inter-Bold", size: CurrencyTokens.typographyDisplayLgFontSize))
+    .kerning(CurrencyTokens.typographyDisplayLgLetterSpacing * CurrencyTokens.typographyDisplayLgFontSize)
+    .monospacedDigit()
+    .foregroundColor(Color(CurrencyTokens.colorTextPrimary))
+```
+
+## Notes
+
+- **Units:** token px = iOS points, 1:1.
+- **Line height:** UIKit has no line-height property. Set `NSParagraphStyle.minimumLineHeight` and `maximumLineHeight` to the `…LineHeight` token, and offset the baseline by `(lineHeight − font.lineHeight) / 4`.
+- **Letter spacing** is in em: `kern = letterSpacing × fontSize`. Only the display styles use it.
+- **Font weight** tokens are numbers (400 / 500 / 600 / 700). Map them to the bundled font names `Inter-Regular`, `Inter-Medium`, `Inter-SemiBold`, `Inter-Bold`.
+- **Dynamic Type:** wrap sizes with `UIFontMetrics(forTextStyle:).scaledFont(for:)` so text follows the user's size setting.
+- **Shadows** use one layer per level (the larger ambient one). See [Elevation](?path=/docs/foundations-elevation--docs).

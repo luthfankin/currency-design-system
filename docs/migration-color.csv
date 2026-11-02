@@ -1,0 +1,91 @@
+legacy_style,legacy_hex,new_primitive,new_hex,delta_e,use_semantic_token
+Neutral/100,#171C23,neutral/950,#1C1C1D,1.4,text/primary
+Neutral/90,#212832,neutral/900,#29292A,2.1,"text/primary, bg/inverse"
+Neutral/80,#2C333C,neutral/900,#29292A,4.1,text/primary
+Neutral/70,#3F464F,neutral/800,#404041,2.5,
+Neutral/60,#545B65,neutral/700,#555556,2.5,text/secondary
+Neutral/50,#69707A,neutral/600,#6D6D6E,1.8,text/tertiary
+Neutral/40,#818995,neutral/500,#858586,2.2,text/disabled
+Neutral/30,#ABB4C0,neutral/300,#BCBCBD,3.4,"icon/disabled, border/strong"
+Neutral/20,#E5E8EC,neutral/100,#E9E9EA,0.7,border/default
+Neutral/10,#F2F4F7,neutral/50,#F6F6F7,0.8,bg/subtle
+Neutral/5,#F9FAFB,neutral/50,#F6F6F7,1.1,bg/canvas
+Neutral/0,#FFFFFF,base/white,#FFFFFF,0.0,"bg/surface, text/inverse"
+Neutral/bg,#F5F8FB,neutral/50,#F6F6F7,0.6,bg/canvas
+Green/100,#003634,cyan/900,#004343,4.7,
+Green/90,#004947,cyan/900,#004343,2.0,
+Green/80,#00514E,cyan/900,#004343,4.7,
+Green/70,#006B67,cyan/800,#076060,3.4,
+Green/60,#008681,cyan/700,#1A7E7E,2.3,bg/success (if status)
+Green/50,#00A19B,cyan/600,#349D9D,1.9,
+Green/40,#2BB1AC,cyan/500,#4DBCBD,4.4,
+Green/30,#80D0CD,cyan/400,#65DDDD,3.8,
+Green/20,#AAE0DE,cyan/400,#65DDDD,6.5,
+Green/10,#CCECEB,cyan/100,#CCFCFB,4.1,
+Green/5,#E8F8F7,cyan/50,#EBF9F9,0.5,bg/success-subtle (if status)
+Blue/100,#041639,blue/950,#021B54,5.3,
+Blue/90,#032362,blue/950,#021B54,3.4,
+Blue/80,#0B3484,blue/900,#022B82,2.5,
+Blue/70,#1747A6,blue/800,#003CB3,3.7,
+Blue/60,#265DC8,blue/700,#0052D6,4.1,"bg/info, text/link"
+Blue/50,#3975EA,blue/500,#3885FC,4.6,
+Blue/40,#4B88FF,blue/500,#3885FC,1.8,
+Blue/30,#74A3FF,blue/400,#5B9EFF,3.0,
+Blue/20,#9CBEFF,blue/300,#88B9FE,2.8,
+Blue/10,#C4D8FF,blue/200,#B3D2FE,2.8,
+Blue/5,#EDF3FF,blue/50,#F0F6FF,0.9,bg/info-subtle
+Cyan/100,#083841,cyan/900,#004343,3.7,
+Cyan/90,#0D5462,cyan/800,#076060,4.1,
+Cyan/80,#117083,cyan/700,#1A7E7E,4.8,
+Cyan/70,#158CA3,cyan/600,#349D9D,5.8,
+Cyan/60,#19A8C4,cyan/600,#349D9D,5.8,
+Cyan/50,#3FB6CE,cyan/500,#4DBCBD,3.6,
+Cyan/40,#66C5D8,cyan/500,#4DBCBD,4.9,
+Cyan/30,#8CD3E1,cyan/400,#65DDDD,4.2,
+Cyan/20,#B2E2EB,cyan/200,#A9FEFD,7.0,
+Cyan/10,#D1EEF3,cyan/100,#CCFCFB,3.5,
+Cyan/5,#E8F6F9,cyan/50,#EBF9F9,0.9,
+Pink/100,#851651,red/800,#990008,9.8,hue retired — pick an accent
+Pink/90,#9E165F,red/800,#990008,10.7,hue retired — pick an accent
+Pink/80,#C11574,red/600,#CC000B,12.3,hue retired — pick an accent
+Pink/70,#DD2590,red/400,#FF4D57,13.8,hue retired — pick an accent
+Pink/60,#EE46BC,red/400,#FF4D57,15.3,hue retired — pick an accent
+Pink/50,#F670C7,red/300,#FF999E,12.6,hue retired — pick an accent
+Pink/40,#F98ED4,red/300,#FF999E,8.9,hue retired — pick an accent
+Pink/30,#FCB4E3,red/200,#FFCCCE,7.5,hue retired — pick an accent
+Pink/20,#FECDED,red/200,#FFCCCE,4.2,hue retired — pick an accent
+Pink/10,#FEDBF2,red/100,#FFE0E1,3.0,hue retired — pick an accent
+Pink/5,#FDE9F6,red/50,#FFF2F3,2.5,hue retired — pick an accent
+Purple/100,#2C1072,blue/900,#022B82,7.1,hue retired — pick an accent
+Purple/90,#3B149F,blue/900,#022B82,8.4,hue retired — pick an accent
+Purple/80,#4A16CF,blue/800,#003CB3,9.1,hue retired — pick an accent
+Purple/70,#5925DC,blue/700,#0052D6,10.1,hue retired — pick an accent
+Purple/60,#6938EF,blue/700,#0052D6,11.2,hue retired — pick an accent
+Purple/50,#7A5AF8,blue/600,#0066FF,10.8,hue retired — pick an accent
+Purple/40,#9B8AFB,blue/400,#5B9EFF,8.5,hue retired — pick an accent
+Purple/30,#BDB4FE,blue/300,#88B9FE,6.6,hue retired — pick an accent
+Purple/20,#D9D6FE,blue/200,#B3D2FE,5.1,hue retired — pick an accent
+Purple/10,#EBE9FE,blue/100,#DCEBFF,1.9,hue retired — pick an accent
+Purple/5,#F4F3FF,blue/50,#F0F6FF,0.9,hue retired — pick an accent
+Red/100,#4B0C09,red/950,#3D100D,3.2,
+Red/90,#71130E,red/900,#660006,3.7,
+Red/80,#961912,red/800,#990008,1.6,
+Red/70,#BB1F17,red/700,#B2000A,3.1,
+Red/60,#CD1E15,red/600,#CC000B,1.6,"bg/brand-pressed, text/brand"
+Red/50,#E1251B,red/600,#CC000B,5.4,"bg/brand (fill), icon/brand, border/brand"
+Red/40,#E64941,red/400,#FF4D57,5.5,
+Red/30,#EB6E67,red/400,#FF4D57,5.9,
+Red/20,#F0928D,red/300,#FF999E,3.7,
+Red/10,#F9D3D1,red/200,#FFCCCE,1.8,
+Red/5,#FFEFEE,red/50,#FFF2F3,0.8,bg/brand-subtle
+Yellow/100,#552F0E,orange/900,#4B2E00,2.5,
+Yellow/90,#804716,orange/700,#845405,3.9,
+Yellow/80,#AA5E1D,orange/600,#A1690B,3.5,
+Yellow/70,#D47624,orange/500,#C17D0C,4.0,
+Yellow/60,#FF8D2B,orange/400,#E09417,5.7,
+Yellow/50,#FFA04E,orange/300,#FFAB2C,4.0,bg/warning
+Yellow/40,#FFB372,orange/300,#FFAB2C,5.3,
+Yellow/30,#FFC695,orange/200,#FFD27A,5.0,
+Yellow/20,#FFD9B8,orange/100,#FFF3D9,6.5,
+Yellow/10,#FFE8D5,orange/100,#FFF3D9,2.7,
+Yellow/5,#FFF4EC,orange/50,#FFFAF0,1.4,bg/warning-subtle
