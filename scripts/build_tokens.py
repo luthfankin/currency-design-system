@@ -9,10 +9,13 @@ OUT = sys.argv[2]; PAYLOAD = sys.argv[3]
 os.makedirs(OUT, exist_ok=True)
 
 # ---------- 1. Primitives ----------
-prim_color = {'base/white': '#FFFFFF', 'base/black': '#000000'}
+# Figma-style scale: 05 (lightest) … 100 (darkest); neutral also has 00 (white)
+STEP = {'50': '05', '100': '10', '200': '20', '300': '30', '400': '40', '500': '50', '600': '60', '700': '70', '800': '80', '900': '90', '950': '100'}
+prim_color = {}
 for hue, ramp in pal.items():
+    if hue == 'neutral': prim_color['neutral/00'] = '#FFFFFF'
     for step, hexv in ramp.items():
-        prim_color[f'{hue}/{step}'] = hexv
+        prim_color[f'{hue}/{STEP[str(step)]}'] = hexv
 prim_alpha = {'alpha/black-60': ('#000000', 0.60), 'alpha/black-8': ('#000000', 0.08), 'alpha/white-16': ('#FFFFFF', 0.16)}
 
 DIM = [0, 1, 2, 4, 6, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80]
@@ -22,35 +25,35 @@ prim_dim['dimension/full'] = 9999
 # ---------- 2. Semantic color (Light) ----------
 C = {
   # background
-  'bg/canvas': 'neutral/50', 'bg/surface': 'base/white', 'bg/subtle': 'neutral/50',
-  'bg/muted': 'neutral/100', 'bg/disabled': 'neutral/100', 'bg/inverse': 'neutral/900',
-  'bg/brand': 'red/600', 'bg/brand-pressed': 'red/700', 'bg/brand-subtle': 'red/50',
-  'bg/success': 'success/600', 'bg/success-subtle': 'success/50',
-  'bg/warning': 'warning/400', 'bg/warning-subtle': 'warning/50',
-  'bg/error': 'error/600', 'bg/error-subtle': 'error/50',
-  'bg/info': 'info/600', 'bg/info-subtle': 'info/50',
+  'bg/canvas': 'neutral/05', 'bg/surface': 'neutral/00', 'bg/subtle': 'neutral/05',
+  'bg/muted': 'neutral/10', 'bg/disabled': 'neutral/10', 'bg/inverse': 'neutral/90',
+  'bg/brand': 'red/60', 'bg/brand-pressed': 'red/70', 'bg/brand-subtle': 'red/05',
+  'bg/success': 'success/60', 'bg/success-subtle': 'success/05',
+  'bg/warning': 'warning/40', 'bg/warning-subtle': 'warning/05',
+  'bg/error': 'error/60', 'bg/error-subtle': 'error/05',
+  'bg/info': 'info/60', 'bg/info-subtle': 'info/05',
   'bg/overlay': 'alpha/black-60', 'bg/pressed': 'alpha/black-8',
   # text
-  'text/primary': 'neutral/900', 'text/secondary': 'neutral/700', 'text/tertiary': 'neutral/600',
-  'text/disabled': 'neutral/400', 'text/inverse': 'base/white', 'text/on-brand': 'base/white',
-  'text/brand': 'red/600', 'text/link': 'blue/700',
-  'text/success': 'success/700', 'text/warning': 'warning/700', 'text/error': 'error/700', 'text/info': 'info/700',
+  'text/primary': 'neutral/90', 'text/secondary': 'neutral/70', 'text/tertiary': 'neutral/60',
+  'text/disabled': 'neutral/40', 'text/inverse': 'neutral/00', 'text/on-brand': 'neutral/00',
+  'text/brand': 'red/60', 'text/link': 'blue/70',
+  'text/success': 'success/70', 'text/warning': 'warning/70', 'text/error': 'error/70', 'text/info': 'info/70',
   # icon
-  'icon/primary': 'neutral/900', 'icon/secondary': 'neutral/700', 'icon/tertiary': 'neutral/500',
-  'icon/disabled': 'neutral/300', 'icon/inverse': 'base/white', 'icon/on-brand': 'base/white',
-  'icon/brand': 'red/500', 'icon/success': 'success/600', 'icon/warning': 'warning/500',
-  'icon/error': 'error/600', 'icon/info': 'info/600',
+  'icon/primary': 'neutral/90', 'icon/secondary': 'neutral/70', 'icon/tertiary': 'neutral/50',
+  'icon/disabled': 'neutral/30', 'icon/inverse': 'neutral/00', 'icon/on-brand': 'neutral/00',
+  'icon/brand': 'red/50', 'icon/success': 'success/60', 'icon/warning': 'warning/50',
+  'icon/error': 'error/60', 'icon/info': 'info/60',
   # border
-  'border/default': 'neutral/200', 'border/subtle': 'neutral/100', 'border/strong': 'neutral/300',
-  'border/disabled': 'neutral/100', 'border/focus': 'blue/600', 'border/brand': 'red/500',
-  'border/success': 'success/500', 'border/warning': 'warning/400', 'border/error': 'error/600',
+  'border/default': 'neutral/20', 'border/subtle': 'neutral/10', 'border/strong': 'neutral/30',
+  'border/disabled': 'neutral/10', 'border/focus': 'blue/60', 'border/brand': 'red/50',
+  'border/success': 'success/50', 'border/warning': 'warning/40', 'border/error': 'error/60',
   # accent (categories, illustrations, badges) — the non-status hues of the new palette
-  'accent/blue/bg': 'blue/50', 'accent/blue/fg': 'blue/700',
-  'accent/cyan/bg': 'cyan/50', 'accent/cyan/fg': 'cyan/800',
-  'accent/turquoise/bg': 'turquoise/50', 'accent/turquoise/fg': 'turquoise/800',
-  'accent/green/bg': 'green/50', 'accent/green/fg': 'green/800',
-  'accent/orange/bg': 'orange/50', 'accent/orange/fg': 'orange/700',
-  'accent/lime/bg': 'lime/50', 'accent/lime/fg': 'lime/800',
+  'accent/blue/bg': 'blue/05', 'accent/blue/fg': 'blue/70',
+  'accent/cyan/bg': 'cyan/05', 'accent/cyan/fg': 'cyan/80',
+  'accent/turquoise/bg': 'turquoise/05', 'accent/turquoise/fg': 'turquoise/80',
+  'accent/green/bg': 'green/05', 'accent/green/fg': 'green/80',
+  'accent/orange/bg': 'orange/05', 'accent/orange/fg': 'orange/70',
+  'accent/lime/bg': 'lime/05', 'accent/lime/fg': 'lime/80',
 }
 SCOPE = {'bg': ['FRAME_FILL', 'SHAPE_FILL'], 'text': ['TEXT_FILL'], 'icon': ['SHAPE_FILL', 'STROKE_COLOR'],
          'border': ['STROKE_COLOR'], 'accent': ['FRAME_FILL', 'SHAPE_FILL', 'TEXT_FILL']}

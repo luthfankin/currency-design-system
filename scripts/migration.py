@@ -4,6 +4,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from palette import rgb_to_oklch, hex_to_rgb
 
 pal = json.load(open(sys.argv[1]))['ramps']
+STEP = {'50': '05', '100': '10', '200': '20', '300': '30', '400': '40', '500': '50', '600': '60', '700': '70', '800': '80', '900': '90', '950': '100'}
 STATUS_HUES = {'success', 'warning', 'error', 'info'}
 LEGACY = """Neutral/100|#171C23 Neutral/90|#212832 Neutral/80|#2C333C Neutral/70|#3F464F Neutral/60|#545B65 Neutral/50|#69707A Neutral/40|#818995 Neutral/30|#ABB4C0 Neutral/20|#E5E8EC Neutral/10|#F2F4F7 Neutral/5|#F9FAFB Neutral/0|#FFFFFF Neutral/bg|#F5F8FB Green/100|#003634 Green/90|#004947 Green/80|#00514E Green/70|#006B67 Green/60|#008681 Green/50|#00A19B Green/40|#2BB1AC Green/30|#80D0CD Green/20|#AAE0DE Green/10|#CCECEB Green/5|#E8F8F7 Blue/100|#041639 Blue/90|#032362 Blue/80|#0B3484 Blue/70|#1747A6 Blue/60|#265DC8 Blue/50|#3975EA Blue/40|#4B88FF Blue/30|#74A3FF Blue/20|#9CBEFF Blue/10|#C4D8FF Blue/5|#EDF3FF Cyan/100|#083841 Cyan/90|#0D5462 Cyan/80|#117083 Cyan/70|#158CA3 Cyan/60|#19A8C4 Cyan/50|#3FB6CE Cyan/40|#66C5D8 Cyan/30|#8CD3E1 Cyan/20|#B2E2EB Cyan/10|#D1EEF3 Cyan/5|#E8F6F9 Pink/100|#851651 Pink/90|#9E165F Pink/80|#C11574 Pink/70|#DD2590 Pink/60|#EE46BC Pink/50|#F670C7 Pink/40|#F98ED4 Pink/30|#FCB4E3 Pink/20|#FECDED Pink/10|#FEDBF2 Pink/5|#FDE9F6 Purple/100|#2C1072 Purple/90|#3B149F Purple/80|#4A16CF Purple/70|#5925DC Purple/60|#6938EF Purple/50|#7A5AF8 Purple/40|#9B8AFB Purple/30|#BDB4FE Purple/20|#D9D6FE Purple/10|#EBE9FE Purple/5|#F4F3FF Red/100|#4B0C09 Red/90|#71130E Red/80|#961912 Red/70|#BB1F17 Red/60|#CD1E15 Red/50|#E1251B Red/40|#E64941 Red/30|#EB6E67 Red/20|#F0928D Red/10|#F9D3D1 Red/5|#FFEFEE Yellow/100|#552F0E Yellow/90|#804716 Yellow/80|#AA5E1D Yellow/70|#D47624 Yellow/60|#FF8D2B Yellow/50|#FFA04E Yellow/40|#FFB372 Yellow/30|#FFC695 Yellow/20|#FFD9B8 Yellow/10|#FFE8D5 Yellow/5|#FFF4EC"""
 
@@ -32,10 +33,10 @@ for hue, hexes in legacy_by_hue.items():
 print('families:', FAMILY)
 for item in LEGACY.split():
     name, old = item.split('|'); hue, step = name.split('/')
-    if name == 'Neutral/0': new = 'base/white'; newhex = '#FFFFFF'
+    if name == 'Neutral/0': new = 'neutral/00'; newhex = '#FFFFFF'
     else:
         fam = FAMILY[hue]
-        new, newhex = min(((f'{fam}/{st}', hx) for st, hx in pal[fam].items()), key=lambda kv: dE(old, kv[1]))
+        new, newhex = min(((f'{fam}/{STEP[str(st)]}', hx) for st, hx in pal[fam].items()), key=lambda kv: dE(old, kv[1]))
     retired = hue in ('Pink', 'Purple')
     rows.append({'legacy': name, 'legacyHex': old, 'new': new, 'newHex': newhex, 'deltaE': dE(old, newhex),
                  'semantic': SEMANTIC_HINT.get(name, '') or ('hue retired — pick an accent' if retired else '')})

@@ -9,10 +9,11 @@ const last = (t: Token) => t.path[t.path.length - 1];
 
 const BRAND_HUES = ['red', 'blue', 'cyan', 'turquoise', 'green', 'orange', 'lime', 'neutral'];
 const STATUS_HUES = ['success', 'warning', 'error', 'info'];
-const ANCHOR: Record<string, string> = { red: '500', success: '500', warning: '400', error: '600', info: '600' };
+const ANCHOR: Record<string, string> = { red: '50', success: '50', warning: '40', error: '60', info: '60' };
 
 function Ramp({ hue }: { hue: string }) {
-  const steps = under(`color.${hue}`);
+  // steps are named 00/05 … 100; sort numerically (JS would otherwise put "10"…"100" before "05")
+  const steps = under(`color.${hue}`).sort((a, b) => parseFloat(last(a)) - parseFloat(last(b)));
   return (
     <div className="cx-ramp">
       <div className="cx-ramp-name">{hue}</div>
@@ -41,7 +42,7 @@ function Ramp({ hue }: { hue: string }) {
 export function ColorPrimitives() {
   return (
     <Wrap>
-      <Section title="Brand & extended palette" intro={<>Exact values from Figma <em>New Color — DOKU by Antom</em>. Figma <code>Red/50</code> = token <code>red/500</code>. <strong>Aa</strong> marks steps where white text passes WCAG AA.</>}>
+      <Section title="Brand & extended palette" intro={<>Exact values from Figma <em>New Color — DOKU by Antom</em>. Step names match Figma: <code>05</code> (lightest) … <code>100</code> (darkest); neutral starts at <code>00</code> (white). <strong>Aa</strong> marks steps where white text passes WCAG AA.</>}>
         {BRAND_HUES.map((h) => <Ramp key={h} hue={h} />)}
       </Section>
       <Section title="Status palettes" intro={<>Generated around the source swatches (★), which stay exact.</>}>
@@ -250,7 +251,7 @@ export function ElevationScale() {
         ))}
       </div>
       <table className="cx-table">
-        <thead><tr><th>Level</th><th>Layers (x y blur spread · opacity of neutral/950)</th><th>iOS (CurrencyElevation.swift)</th><th>Android (currency_elevation.xml)</th></tr></thead>
+        <thead><tr><th>Level</th><th>Layers (x y blur spread · opacity of neutral/100)</th><th>iOS (CurrencyElevation.swift)</th><th>Android (currency_elevation.xml)</th></tr></thead>
         <tbody>
           {levels.map((t) => {
             const layers = t.raw as Layer[];

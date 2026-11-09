@@ -9,11 +9,11 @@ The full style-by-style map is on the **Migration map** page in Figma and in `do
 ## What changed
 
 - **New palette** (DOKU by Antom). Colors shift on purpose, median ΔE 3.8.
-- **Step names** go from `5, 10…100` to `50, 100…950` (higher = darker, as before). Figma `Red/50` = token `red/500`.
+- **Step names** use the same scale as Figma: `05` (lightest) … `100` (darkest); neutral also has `00` (white). Figma `Red/50` = token `red/50`.
 - **Legacy hue → new family:** Neutral → `neutral` (now pure gray), Red → `red`, Blue → `blue`, Cyan and Green (it was teal) → `cyan`, Yellow → `orange`.
 - **Pink and Purple are retired.** Re-pick those uses from `color/accent/*`.
 - **Status colors** have their own ramps: `success`, `warning`, `error`, `info`. The 1.x `danger` naming is now **`error`**.
-- **Brand fills** use red/600, because white text on pure red/500 fails AA.
+- **Brand fills** use red/60, because white text on pure red/50 fails AA.
 - **Typography:** 21 size × weight styles become 24 role-based ones (display, heading, body, label, caption). Line heights snap to a 4 px grid: 12/18 → 12/16, 20/26 → 20/28.
 - **Spacing:** off-grid values (10, 14, 9.5, 23…) map to the nearest step on the 4 px scale.
 - **Radius:** the 13 legacy radii collapse into 7 steps.

@@ -45,23 +45,23 @@ To add a component later, create `stories/components/<Name>.mdx` (or `<Name>.sto
 
 ```
 Primitives (raw values, never used directly in UI)
-  color/red/600 = #CC000B       dimension/16 = 16px      font/size/14 = 14px
+  color/red/60 = #CC000B       dimension/16 = 16px      font/size/14 = 14px
         │                               │                        │
         ▼                               ▼                        ▼
 Semantic (what components use)
-  color/bg/brand → red/600      spacing/md → dimension/16   typography/body/md/regular
+  color/bg/brand → red/60      spacing/md → dimension/16   typography/body/md/regular
 ```
 
-**Rule for components:** use semantic tokens only (`color/*`, `spacing/*`, `layout/*`, `radius/*`, `border-width/*`, `typography/*`, `elevation/*`). Never use `color/red/600` or `dimension/16` in a component.
+**Rule for components:** use semantic tokens only (`color/*`, `spacing/*`, `layout/*`, `radius/*`, `border-width/*`, `typography/*`, `elevation/*`). Never use `color/red/60` or `dimension/16` in a component.
 In Figma, primitives are hidden from the variable pickers for the same reason.
 
 ### What's in it
 
 | Group | Count | Notes |
 |---|---|---|
-| Color — brand & extended | 8 ramps × 11 steps (50–950): red, blue, cyan, turquoise, green, orange, lime, neutral | Exact values from Figma *New Color — DOKU by Antom*. Figma `Red/50` = token `red/500` |
-| Color — status | 4 ramps × 11 steps: success, warning, error, info | Generated (OKLCH) around the source swatches #16A34A, #F59E0B, #DC2626, #2563EB, which stay exact at success/500, warning/400, error/600, info/600 |
-| Color — base | white, black, 3 alpha | Overlay scrim, pressed state |
+| Color — brand & extended | 8 ramps × 11 steps (05–100; neutral also 00 = white): red, blue, cyan, turquoise, green, orange, lime, neutral | Exact values from Figma *New Color — DOKU by Antom*; step names match Figma (`Red/50` = `red/50`) |
+| Color — status | 4 ramps × 11 steps: success, warning, error, info | Generated (OKLCH) around the source swatches #16A34A, #F59E0B, #DC2626, #2563EB, which stay exact at success/50, warning/40, error/60, info/60 |
+| Color — alpha | 3 alpha colors | Overlay scrim, pressed state |
 | Semantic color | 63 | `bg/*`, `text/*`, `icon/*`, `border/*`, `accent/*` |
 | Spacing | 12 + 4 layout | 4 px grid: `none 0 · 3xs 2 · 2xs 4 · xs 8 · sm 12 · md 16 · lg 20 · xl 24 · 2xl 32 · 3xl 40 · 4xl 48 · 5xl 64` |
 | Radius | 7 | `none 0 · xs 4 · sm 8 · md 12 · lg 16 · xl 24 · full 9999` |
@@ -103,7 +103,7 @@ In Figma, letter spacing is stored in px (display styles: −1% × size, e.g. di
 4. **Amounts.** Turn on tabular figures for balances and prices so digits don't shift: `fontVariant: ['tabular-nums']` (RN), `font-variant-numeric: tabular-nums` (CSS), `.monospacedDigit()` (SwiftUI).
 5. **Elevation.** CSS gets full `box-shadow` values. On RN/Android, map each level to `elevation` / `shadow*` props: `elevation/1→2dp`, `2→4dp`, `3→8dp`, `4→16dp`. The two-layer shadow values in `semantic.tokens.json` are the visual reference for iOS.
 6. **radius/full = 9999.** Use it for pills and circles; platforms clamp it to half the height.
-7. **Brand red: fill vs. accent.** `bg/brand` and `text/brand` use red/600 (#CC000B) because white text on the pure brand red/500 (#FF000E) is only 3.99:1. Pure red/500 is for `icon/brand`, `border/brand`, logos and decoration.
+7. **Brand red: fill vs. accent.** `bg/brand` and `text/brand` use red/60 (#CC000B) because white text on the pure brand red/50 (#FF000E) is only 3.99:1. Pure red/50 is for `icon/brand`, `border/brand`, logos and decoration.
 8. **Brand vs. error.** Error states use the separate `error/*` ramp (#DC2626) rather than brand red. Still pair errors with an icon and text so they don't rely on color alone.
 9. **On `bg/muted`**, use `text/secondary`. `text/tertiary` drops to 4.26:1 there.
 
@@ -126,7 +126,7 @@ See `docs/migration-color.csv` and `docs/migration-type-spacing-radius.csv`, or 
 - **Pink and Purple are retired** and have no successor. Re-pick those uses from the `accent/*` tokens.
 - Status colors now come from the dedicated `success/warning/error/info` ramps, not from green/orange/red/blue.
 - `danger` tokens are renamed **`error`** (`bg/error`, `text/error`, `icon/error`, `border/error`).
-- Step names change from `5, 10…100` to `50, 100…950` (higher = darker, as before).
+- Step names keep the Figma scale `05 … 100` (higher = darker); neutral adds `00` (white).
 - Text line heights move to a 4 px grid: 12/18→12/16, 20/26→20/28 (16/20 is unchanged).
 - Off-grid spacing (10, 14, 9.5, 23…) and the 13 legacy radii map to the nearest token.
 

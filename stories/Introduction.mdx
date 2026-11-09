@@ -20,7 +20,7 @@ import { Meta } from '@storybook/blocks';
 
 ## Golden rules
 
-1. **Use semantic tokens in UI**: `color/bg/brand`, `spacing/md`, `radius/sm`. Never raw hex values or primitives like `red/600`.
+1. **Use semantic tokens in UI**: `color/bg/brand`, `spacing/md`, `radius/sm`. Never raw hex values or primitives like `red/60`.
 2. **One source of truth.** Values live in `tokens/*.tokens.json`. Change them there (or in Figma first, then sync), then run `npm run build`. Never edit the generated Swift / XML files.
 3. **Names match everywhere.** `color/bg/brand` in Figma = `CurrencyTokens.colorBgBrand` on iOS = `@color/color_bg_brand` on Android = `var(--color-bg-brand)` on web.
 4. **Accessibility is built in.** Text/background pairs from the semantic set pass WCAG AA. If you combine tokens in a new way, check it on the Color page.
