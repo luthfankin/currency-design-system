@@ -229,7 +229,7 @@ public class CurrencyTokens {
     public static let dimension80 = CGFloat(80.00)
     public static let dimensionFull = CGFloat(9999.00)
     public static let fontFamilyBase = "Inter"
-    public static let fontFamilyButton = "DIN Next LT Pro"
+    public static let fontFamilyBrand = "DIN Next LT Pro"
     public static let fontLineHeight14 = CGFloat(14.00)
     public static let fontLineHeight16 = CGFloat(16.00)
     public static let fontLineHeight20 = CGFloat(20.00)
@@ -386,9 +386,9 @@ public class CurrencyTokens {
     public static let typographyHeadingSmFontWeight = 600 /** Card titles */
     public static let typographyHeadingSmLetterSpacing = 0 /** Card titles */
     public static let typographyHeadingSmLineHeight = CGFloat(24.00) /** Card titles */
-    public static let typographyHeadingXsFontFamily = "Inter" /** Top bar title, list group titles */
+    public static let typographyHeadingXsFontFamily = "DIN Next LT Pro" /** Top bar title, list group titles */
     public static let typographyHeadingXsFontSize = CGFloat(16.00) /** Top bar title, list group titles */
-    public static let typographyHeadingXsFontWeight = 600 /** Top bar title, list group titles */
+    public static let typographyHeadingXsFontWeight = 500 /** Top bar title, list group titles */
     public static let typographyHeadingXsLetterSpacing = 0 /** Top bar title, list group titles */
     public static let typographyHeadingXsLineHeight = CGFloat(24.00) /** Top bar title, list group titles */
     public static let typographyLabelLgFontFamily = "Inter" /** Buttons, tabs, chips, form labels */

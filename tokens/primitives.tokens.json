@@ -651,7 +651,7 @@
           "sans-serif"
         ]
       },
-      "button": {
+      "brand": {
         "$type": "fontFamily",
         "$value": [
           "DIN Next LT Pro",

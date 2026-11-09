@@ -219,7 +219,7 @@ export const Dimension64 = 64;
 export const Dimension80 = 80;
 export const DimensionFull = 9999;
 export const FontFamilyBase = ["Inter", "system-ui", "sans-serif"];
-export const FontFamilyButton = [
+export const FontFamilyBrand = [
   "DIN Next LT Pro",
   "Inter",
   "system-ui",
@@ -329,11 +329,12 @@ export const TypographyHeadingSmFontSize = 18; // Card titles
 export const TypographyHeadingSmLineHeight = 24; // Card titles
 export const TypographyHeadingSmLetterSpacing = 0; // Card titles
 export const TypographyHeadingXsFontFamily = [
+  "DIN Next LT Pro",
   "Inter",
   "system-ui",
   "sans-serif",
 ]; // Top bar title, list group titles
-export const TypographyHeadingXsFontWeight = 600; // Top bar title, list group titles
+export const TypographyHeadingXsFontWeight = 500; // Top bar title, list group titles
 export const TypographyHeadingXsFontSize = 16; // Top bar title, list group titles
 export const TypographyHeadingXsLineHeight = 24; // Top bar title, list group titles
 export const TypographyHeadingXsLetterSpacing = 0; // Top bar title, list group titles

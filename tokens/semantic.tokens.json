@@ -461,8 +461,8 @@
         "$type": "typography",
         "$description": "Top bar title, list group titles",
         "$value": {
-          "fontFamily": "{font.family.base}",
-          "fontWeight": "{font.weight.semibold}",
+          "fontFamily": "{font.family.brand}",
+          "fontWeight": "{font.weight.medium}",
           "fontSize": "{font.size.16}",
           "lineHeight": "{font.line-height.24}",
           "letterSpacing": "0em"
@@ -674,7 +674,7 @@
           "$type": "typography",
           "$description": "Medium (default) size button",
           "$value": {
-            "fontFamily": "{font.family.button}",
+            "fontFamily": "{font.family.brand}",
             "fontWeight": "{font.weight.medium}",
             "fontSize": "{font.size.14}",
             "lineHeight": "{font.line-height.20}",
@@ -687,7 +687,7 @@
           "$type": "typography",
           "$description": "Large size button",
           "$value": {
-            "fontFamily": "{font.family.button}",
+            "fontFamily": "{font.family.brand}",
             "fontWeight": "{font.weight.medium}",
             "fontSize": "{font.size.16}",
             "lineHeight": "{font.line-height.20}",

@@ -219,7 +219,7 @@ export const Dimension64: number;
 export const Dimension80: number;
 export const DimensionFull: number;
 export const FontFamilyBase: string[];
-export const FontFamilyButton: string[];
+export const FontFamilyBrand: string[];
 export const FontWeightRegular: number;
 export const FontWeightMedium: number;
 export const FontWeightSemibold: number;

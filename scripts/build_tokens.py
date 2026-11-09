@@ -100,14 +100,15 @@ TEXT = [  # name, size, line-height, weight, letter-spacing(%), usage
   ('heading/lg', 24, 32, 'semibold', 0, 'Page titles in content'),
   ('heading/md', 20, 28, 'semibold', 0, 'Section titles, bottom sheet titles'),
   ('heading/sm', 18, 24, 'semibold', 0, 'Card titles'),
-  ('heading/xs', 16, 24, 'semibold', 0, 'Top bar title, list group titles'),
+  ('heading/xs', 16, 24, 'medium', 0, 'Top bar title, list group titles'),
 ]
 for size, lh, key in [(16, 20, 'lg'), (14, 20, 'md'), (12, 16, 'sm')]:
     for w in ['regular', 'medium', 'semibold', 'bold']:
         TEXT.append((f'body/{key}/{w}', size, lh, w, 0, {'lg': 'Long-form, input values', 'md': 'Default body text, list rows', 'sm': 'Helper text, meta info'}[key]))
 for size, lh, key in [(16, 20, 'lg'), (14, 20, 'md'), (12, 16, 'sm')]:
     TEXT.append((f'label/{key}', size, lh, 'semibold', 0, 'Buttons, tabs, chips, form labels'))
-# Buttons use the brand typeface (DIN Next LT Pro); everything else is Inter
+# Buttons and heading/xs use the brand typeface (DIN Next LT Pro); everything else is Inter
+BRAND_STYLES = {'button/md/medium', 'button/lg/medium', 'heading/xs'}
 BUTTON_TEXT = [('button/md/medium', 14, 20, 'medium', 0, 'Medium (default) size button'),
                ('button/lg/medium', 16, 20, 'medium', 0, 'Large size button')]
 TEXT += [('caption/regular', 10, 14, 'regular', 0, 'Badges, legal, timestamps'),
@@ -135,7 +136,7 @@ for k, (h, a) in prim_alpha.items():
     nest(prim, 'color/' + k, {'$type': 'color', '$value': h + f'{round(a*255):02X}'})
 for k, v in prim_dim.items(): nest(prim, k, {'$type': 'dimension', '$value': f'{v}px'})
 nest(prim, 'font/family/base', {'$type': 'fontFamily', '$value': ['Inter', 'system-ui', 'sans-serif']})
-nest(prim, 'font/family/button', {'$type': 'fontFamily', '$value': ['DIN Next LT Pro', 'Inter', 'system-ui', 'sans-serif']})
+nest(prim, 'font/family/brand', {'$type': 'fontFamily', '$value': ['DIN Next LT Pro', 'Inter', 'system-ui', 'sans-serif']})
 for k, (_, n) in WEIGHT.items(): nest(prim, f'font/weight/{k}', {'$type': 'fontWeight', '$value': n})
 for s in SIZES: nest(prim, f'font/size/{s}', {'$type': 'dimension', '$value': f'{s}px'})
 for l in LH: nest(prim, f'font/line-height/{l}', {'$type': 'dimension', '$value': f'{l}px'})
@@ -147,7 +148,7 @@ for k, v in RADIUS.items(): nest(sem, k, {'$type': 'dimension', '$value': ref(f'
 for k, v in BORDER.items(): nest(sem, k, {'$type': 'dimension', '$value': ref(f'dimension/{v}')})
 for name, size, lh, w, ls, use in TEXT + BUTTON_TEXT:
     nest(sem, 'typography/' + name, {'$type': 'typography', '$description': use, '$value': {
-        'fontFamily': '{font.family.button}' if name.startswith('button/') else '{font.family.base}', 'fontWeight': ref(f'font/weight/{w}'),
+        'fontFamily': '{font.family.brand}' if name in BRAND_STYLES else '{font.family.base}', 'fontWeight': ref(f'font/weight/{w}'),
         'fontSize': ref(f'font/size/{size}'), 'lineHeight': ref(f'font/line-height/{lh}'),
         'letterSpacing': f'{ls/100}em' if ls else '0em'}})
 for k, (layers, use) in ELEVATION.items():

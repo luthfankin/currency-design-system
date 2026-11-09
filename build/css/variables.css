@@ -157,7 +157,7 @@
   --dimension-80: 80px;
   --dimension-full: 9999px;
   --font-family-base: Inter, system-ui, sans-serif;
-  --font-family-button: 'DIN Next LT Pro', Inter, system-ui, sans-serif;
+  --font-family-brand: 'DIN Next LT Pro', Inter, system-ui, sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -325,8 +325,8 @@
   --typography-heading-sm-font-weight: var(--font-weight-semibold); /** Card titles */
   --typography-heading-sm-font-size: var(--font-size-18); /** Card titles */
   --typography-heading-sm-line-height: var(--font-line-height-24); /** Card titles */
-  --typography-heading-xs-font-family: var(--font-family-base); /** Top bar title, list group titles */
-  --typography-heading-xs-font-weight: var(--font-weight-semibold); /** Top bar title, list group titles */
+  --typography-heading-xs-font-family: var(--font-family-brand); /** Top bar title, list group titles */
+  --typography-heading-xs-font-weight: var(--font-weight-medium); /** Top bar title, list group titles */
   --typography-heading-xs-font-size: var(--font-size-16); /** Top bar title, list group titles */
   --typography-heading-xs-line-height: var(--font-line-height-24); /** Top bar title, list group titles */
   --typography-body-lg-regular-font-family: var(--font-family-base); /** Long-form, input values */
@@ -397,11 +397,11 @@
   --typography-caption-semibold-font-weight: var(--font-weight-semibold); /** Badge labels, tiny emphasis */
   --typography-caption-semibold-font-size: var(--font-size-10); /** Badge labels, tiny emphasis */
   --typography-caption-semibold-line-height: var(--font-line-height-14); /** Badge labels, tiny emphasis */
-  --typography-button-md-medium-font-family: var(--font-family-button); /** Medium (default) size button */
+  --typography-button-md-medium-font-family: var(--font-family-brand); /** Medium (default) size button */
   --typography-button-md-medium-font-weight: var(--font-weight-medium); /** Medium (default) size button */
   --typography-button-md-medium-font-size: var(--font-size-14); /** Medium (default) size button */
   --typography-button-md-medium-line-height: var(--font-line-height-20); /** Medium (default) size button */
-  --typography-button-lg-medium-font-family: var(--font-family-button); /** Large size button */
+  --typography-button-lg-medium-font-family: var(--font-family-brand); /** Large size button */
   --typography-button-lg-medium-font-weight: var(--font-weight-medium); /** Large size button */
   --typography-button-lg-medium-font-size: var(--font-size-16); /** Large size button */
   --typography-button-lg-medium-line-height: var(--font-line-height-20); /** Large size button */
