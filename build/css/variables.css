@@ -157,6 +157,7 @@
   --dimension-80: 80px;
   --dimension-full: 9999px;
   --font-family-base: Inter, system-ui, sans-serif;
+  --font-family-button: 'DIN Next LT Pro', Inter, system-ui, sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -204,6 +205,8 @@
   --typography-label-sm-letter-spacing: 0em; /** Buttons, tabs, chips, form labels */
   --typography-caption-regular-letter-spacing: 0em; /** Badges, legal, timestamps */
   --typography-caption-semibold-letter-spacing: 0em; /** Badge labels, tiny emphasis */
+  --typography-button-md-medium-letter-spacing: 0em; /** Medium (default) size button */
+  --typography-button-lg-medium-letter-spacing: 0em; /** Large size button */
   --elevation-1: 0px 1px 2px 0px #1C1C1D0F, 0px 1px 3px 0px #1C1C1D1A; /** Cards, list containers resting on canvas */
   --elevation-2: 0px 2px 4px -2px #1C1C1D0F, 0px 4px 8px -2px #1C1C1D1A; /** Dropdowns, popovers, sticky headers when scrolled */
   --elevation-3: 0px 4px 6px -2px #1C1C1D0A, 0px 12px 16px -4px #1C1C1D1A; /** Toasts, floating action buttons */
@@ -394,4 +397,12 @@
   --typography-caption-semibold-font-weight: var(--font-weight-semibold); /** Badge labels, tiny emphasis */
   --typography-caption-semibold-font-size: var(--font-size-10); /** Badge labels, tiny emphasis */
   --typography-caption-semibold-line-height: var(--font-line-height-14); /** Badge labels, tiny emphasis */
+  --typography-button-md-medium-font-family: var(--font-family-button); /** Medium (default) size button */
+  --typography-button-md-medium-font-weight: var(--font-weight-medium); /** Medium (default) size button */
+  --typography-button-md-medium-font-size: var(--font-size-14); /** Medium (default) size button */
+  --typography-button-md-medium-line-height: var(--font-line-height-20); /** Medium (default) size button */
+  --typography-button-lg-medium-font-family: var(--font-family-button); /** Large size button */
+  --typography-button-lg-medium-font-weight: var(--font-weight-medium); /** Large size button */
+  --typography-button-lg-medium-font-size: var(--font-size-16); /** Large size button */
+  --typography-button-lg-medium-line-height: var(--font-line-height-20); /** Large size button */
 }

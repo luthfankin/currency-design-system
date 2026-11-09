@@ -219,6 +219,7 @@ export const Dimension64: number;
 export const Dimension80: number;
 export const DimensionFull: number;
 export const FontFamilyBase: string[];
+export const FontFamilyButton: string[];
 export const FontWeightRegular: number;
 export const FontWeightMedium: number;
 export const FontWeightSemibold: number;
@@ -508,6 +509,26 @@ export const TypographyCaptionSemiboldFontSize: number;
 export const TypographyCaptionSemiboldLineHeight: number;
 /** Badge labels, tiny emphasis */
 export const TypographyCaptionSemiboldLetterSpacing: number;
+/** Medium (default) size button */
+export const TypographyButtonMdMediumFontFamily: string[];
+/** Medium (default) size button */
+export const TypographyButtonMdMediumFontWeight: number;
+/** Medium (default) size button */
+export const TypographyButtonMdMediumFontSize: number;
+/** Medium (default) size button */
+export const TypographyButtonMdMediumLineHeight: number;
+/** Medium (default) size button */
+export const TypographyButtonMdMediumLetterSpacing: number;
+/** Large size button */
+export const TypographyButtonLgMediumFontFamily: string[];
+/** Large size button */
+export const TypographyButtonLgMediumFontWeight: number;
+/** Large size button */
+export const TypographyButtonLgMediumFontSize: number;
+/** Large size button */
+export const TypographyButtonLgMediumLineHeight: number;
+/** Large size button */
+export const TypographyButtonLgMediumLetterSpacing: number;
 /** Cards, list containers resting on canvas */
 export const Elevation1: {
   offsetX: string;

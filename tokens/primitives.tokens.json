@@ -650,6 +650,15 @@
           "system-ui",
           "sans-serif"
         ]
+      },
+      "button": {
+        "$type": "fontFamily",
+        "$value": [
+          "DIN Next LT Pro",
+          "Inter",
+          "system-ui",
+          "sans-serif"
+        ]
       }
     },
     "weight": {

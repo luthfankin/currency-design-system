@@ -66,7 +66,7 @@ In Figma, primitives are hidden from the variable pickers for the same reason.
 | Spacing | 12 + 4 layout | 4 px grid: `none 0 · 3xs 2 · 2xs 4 · xs 8 · sm 12 · md 16 · lg 20 · xl 24 · 2xl 32 · 3xl 40 · 4xl 48 · 5xl 64` |
 | Radius | 7 | `none 0 · xs 4 · sm 8 · md 12 · lg 16 · xl 24 · full 9999` |
 | Border width | 3 | `none 0 · thin 1 · thick 2` |
-| Typography | 24 styles | Inter. display ×3, heading ×4, body ×12 (regular, medium, semibold, bold), label ×3, caption ×2 |
+| Typography | 26 styles | Inter: display ×3, heading ×4, body ×12 (regular, medium, semibold, bold), label ×3, caption ×2. DIN Next LT Pro: button/md/medium (14/20), button/lg/medium (16/20) |
 | Elevation | 5 | `1–4` + `sheet` (casts upward for bottom sheets / bottom nav) |
 
 ### Naming across platforms
@@ -92,7 +92,7 @@ Every foundation is a Figma variable, so the file can be published as a library 
 | Typography | 120 per-style (`typography/body/md/font-size`, …) + 24 hidden building blocks | font family, weight, size, line height, letter spacing |
 | Elevation | 50 (`elevation/2/layer-1/y`, …/color) | effect values |
 
-The 24 text styles and 5 elevation effect styles are linked to these variables.
+The 26 text styles and 5 elevation effect styles are linked to these variables.
 In Figma, letter spacing is stored in px (display styles: −1% × size, e.g. display/lg = −0.36). In code it stays `-0.01em`.
 
 ## Implementation notes

@@ -229,6 +229,7 @@ public class CurrencyTokens {
     public static let dimension80 = CGFloat(80.00)
     public static let dimensionFull = CGFloat(9999.00)
     public static let fontFamilyBase = "Inter"
+    public static let fontFamilyButton = "DIN Next LT Pro"
     public static let fontLineHeight14 = CGFloat(14.00)
     public static let fontLineHeight16 = CGFloat(16.00)
     public static let fontLineHeight20 = CGFloat(20.00)
@@ -335,6 +336,16 @@ public class CurrencyTokens {
     public static let typographyBodySmSemiboldFontWeight = 600 /** Helper text, meta info */
     public static let typographyBodySmSemiboldLetterSpacing = 0 /** Helper text, meta info */
     public static let typographyBodySmSemiboldLineHeight = CGFloat(16.00) /** Helper text, meta info */
+    public static let typographyButtonLgMediumFontFamily = "DIN Next LT Pro" /** Large size button */
+    public static let typographyButtonLgMediumFontSize = CGFloat(16.00) /** Large size button */
+    public static let typographyButtonLgMediumFontWeight = 500 /** Large size button */
+    public static let typographyButtonLgMediumLetterSpacing = 0 /** Large size button */
+    public static let typographyButtonLgMediumLineHeight = CGFloat(20.00) /** Large size button */
+    public static let typographyButtonMdMediumFontFamily = "DIN Next LT Pro" /** Medium (default) size button */
+    public static let typographyButtonMdMediumFontSize = CGFloat(14.00) /** Medium (default) size button */
+    public static let typographyButtonMdMediumFontWeight = 500 /** Medium (default) size button */
+    public static let typographyButtonMdMediumLetterSpacing = 0 /** Medium (default) size button */
+    public static let typographyButtonMdMediumLineHeight = CGFloat(20.00) /** Medium (default) size button */
     public static let typographyCaptionRegularFontFamily = "Inter" /** Badges, legal, timestamps */
     public static let typographyCaptionRegularFontSize = CGFloat(10.00) /** Badges, legal, timestamps */
     public static let typographyCaptionRegularFontWeight = 400 /** Badges, legal, timestamps */

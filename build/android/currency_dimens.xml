@@ -114,4 +114,8 @@
   <dimen name="typography_caption_regular_line_height">14.00sp</dimen>
   <dimen name="typography_caption_semibold_font_size">10.00sp</dimen>
   <dimen name="typography_caption_semibold_line_height">14.00sp</dimen>
+  <dimen name="typography_button_md_medium_font_size">14.00sp</dimen>
+  <dimen name="typography_button_md_medium_line_height">20.00sp</dimen>
+  <dimen name="typography_button_lg_medium_font_size">16.00sp</dimen>
+  <dimen name="typography_button_lg_medium_line_height">20.00sp</dimen>
 </resources>

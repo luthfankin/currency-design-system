@@ -667,6 +667,34 @@
           "letterSpacing": "0em"
         }
       }
+    },
+    "button": {
+      "md": {
+        "medium": {
+          "$type": "typography",
+          "$description": "Medium (default) size button",
+          "$value": {
+            "fontFamily": "{font.family.button}",
+            "fontWeight": "{font.weight.medium}",
+            "fontSize": "{font.size.14}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        }
+      },
+      "lg": {
+        "medium": {
+          "$type": "typography",
+          "$description": "Large size button",
+          "$value": {
+            "fontFamily": "{font.family.button}",
+            "fontWeight": "{font.weight.medium}",
+            "fontSize": "{font.size.16}",
+            "lineHeight": "{font.line-height.20}",
+            "letterSpacing": "0em"
+          }
+        }
+      }
     }
   },
   "elevation": {

@@ -219,6 +219,12 @@ export const Dimension64 = 64;
 export const Dimension80 = 80;
 export const DimensionFull = 9999;
 export const FontFamilyBase = ["Inter", "system-ui", "sans-serif"];
+export const FontFamilyButton = [
+  "DIN Next LT Pro",
+  "Inter",
+  "system-ui",
+  "sans-serif",
+];
 export const FontWeightRegular = 400;
 export const FontWeightMedium = 500;
 export const FontWeightSemibold = 600;
@@ -472,6 +478,26 @@ export const TypographyCaptionSemiboldFontWeight = 600; // Badge labels, tiny em
 export const TypographyCaptionSemiboldFontSize = 10; // Badge labels, tiny emphasis
 export const TypographyCaptionSemiboldLineHeight = 14; // Badge labels, tiny emphasis
 export const TypographyCaptionSemiboldLetterSpacing = 0; // Badge labels, tiny emphasis
+export const TypographyButtonMdMediumFontFamily = [
+  "DIN Next LT Pro",
+  "Inter",
+  "system-ui",
+  "sans-serif",
+]; // Medium (default) size button
+export const TypographyButtonMdMediumFontWeight = 500; // Medium (default) size button
+export const TypographyButtonMdMediumFontSize = 14; // Medium (default) size button
+export const TypographyButtonMdMediumLineHeight = 20; // Medium (default) size button
+export const TypographyButtonMdMediumLetterSpacing = 0; // Medium (default) size button
+export const TypographyButtonLgMediumFontFamily = [
+  "DIN Next LT Pro",
+  "Inter",
+  "system-ui",
+  "sans-serif",
+]; // Large size button
+export const TypographyButtonLgMediumFontWeight = 500; // Large size button
+export const TypographyButtonLgMediumFontSize = 16; // Large size button
+export const TypographyButtonLgMediumLineHeight = 20; // Large size button
+export const TypographyButtonLgMediumLetterSpacing = 0; // Large size button
 export const Elevation1 = [
   {
     offsetX: "0px",
